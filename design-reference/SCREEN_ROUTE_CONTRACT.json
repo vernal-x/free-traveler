@@ -1,0 +1,286 @@
+{
+  "schema_version": "traveler-screen-route-v1",
+  "framework": "nextjs-app-router",
+  "generated_from": [
+    "app/docs/03_UI_COVERAGE_ANALYSIS.md",
+    "app/docs/04_UIUX_PLAN.md",
+    "app/docs/STITCH_VALIDATION_REPORT.md",
+    "design-reference/D-001/DESIGN.md",
+    "design-reference/UI_CONTRACT.md"
+  ],
+  "generated_at": "2026-09-16",
+  "stitch_project_id": "2834073564133627186",
+  "screens": [
+    {
+      "screen_id": "SCR-001",
+      "screen_type": "core",
+      "title": "메인",
+      "route": "/",
+      "page_entry": "src/app/page.tsx",
+      "page_owner_task_required": true,
+      "preview_required": true,
+      "starter_template_forbidden": true,
+      "device_variants": ["desktop-1440", "mobile-390"],
+      "stitch_screen_ids": {
+        "desktop": "projects/2834073564133627186/screens/72967519ed3542f89d1aacf726bb2a8c",
+        "mobile": "projects/2834073564133627186/screens/e0421a1eafb54285a8e416b54664de5d"
+      },
+      "section_order": [
+        "hero_search",
+        "domestic_destinations_grid",
+        "overseas_destinations_grid",
+        "travel_theme_chips",
+        "country_safety_grid",
+        "recent_mate_posts_or_empty",
+        "free_traveler_summary"
+      ],
+      "min_content_counts": {
+        "domestic_destinations_grid": 6,
+        "overseas_destinations_grid": 6,
+        "travel_theme_chips": 6,
+        "country_safety_grid": 6,
+        "recent_mate_posts_or_empty": 3
+      },
+      "in_screen_overlays": [
+        { "id": "destination_detail_drawer", "trigger": "destination_card_click", "desktop": "right_slide_drawer_480px", "mobile": "fullscreen_modal" },
+        { "id": "country_safety_drawer", "trigger": "safety_card_click_or_drawer_link", "desktop": "right_slide_drawer_480px", "mobile": "fullscreen_modal" }
+      ],
+      "states": ["loading", "success", "empty", "error"],
+      "prohibited_features": [
+        "airbnb_trademark_elements",
+        "real_time_price_comparison",
+        "star_ratings_or_reviews",
+        "booking_or_payment_ui",
+        "placeholder_or_lorem_text"
+      ]
+    },
+    {
+      "screen_id": "SCR-002",
+      "screen_type": "auxiliary",
+      "title": "대표 소개",
+      "route": "/about",
+      "page_entry": "src/app/about/page.tsx",
+      "page_owner_task_required": true,
+      "preview_required": true,
+      "starter_template_forbidden": false,
+      "device_variants": ["desktop-1440"],
+      "stitch_screen_ids": {
+        "desktop": "projects/2834073564133627186/screens/25abc0425c354dfbb865d6d73fe219ce"
+      },
+      "stitch_note": "duplicate screen projects/2834073564133627186/screens/745aecb65dd84ee79c76d9c8763fb010 exists (BLOCKED, pending manual deletion) — implementation MUST reference only the canonical screen id above",
+      "section_order": [
+        "profile_hero",
+        "travel_stats",
+        "intro_and_philosophy",
+        "travel_timeline",
+        "visited_countries_chips",
+        "photo_gallery",
+        "memorable_destinations_and_cta"
+      ],
+      "min_content_counts": {
+        "travel_stats": 3,
+        "travel_timeline": 6,
+        "visited_countries_chips": 30,
+        "photo_gallery": 8,
+        "memorable_destinations_and_cta": 4
+      },
+      "in_screen_overlays": [],
+      "states": ["loading", "success"],
+      "prohibited_features": [
+        "airbnb_trademark_elements",
+        "star_ratings_or_reviews",
+        "booking_or_payment_ui",
+        "placeholder_or_lorem_text"
+      ]
+    },
+    {
+      "screen_id": "SCR-003",
+      "screen_type": "core",
+      "title": "통합 여행 준비",
+      "route": "/travel-tools",
+      "page_entry": "src/app/travel-tools/page.tsx",
+      "page_owner_task_required": true,
+      "preview_required": true,
+      "starter_template_forbidden": false,
+      "device_variants": ["desktop-1440", "mobile-390"],
+      "stitch_screen_ids": {
+        "desktop": "projects/2834073564133627186/screens/193011d274cb4536bfedfe9df330d3ac",
+        "mobile": "projects/2834073564133627186/screens/d8cea87bdb0247f9a0c62ea332837632"
+      },
+      "section_order": [
+        "intro",
+        "tabs_flight_hotel_mate",
+        "trip_condition_form",
+        "summary_and_outbound_action",
+        "disclosure_and_tips",
+        "mate_tab_content"
+      ],
+      "min_content_counts": {
+        "tabs_flight_hotel_mate": 3,
+        "disclosure_and_tips": 3
+      },
+      "tabs": [
+        { "id": "flight", "label": "항공편", "independent_state": true },
+        { "id": "hotel", "label": "숙소", "independent_state": true },
+        { "id": "mate", "label": "동행 구하기", "independent_state": true }
+      ],
+      "in_screen_overlays": [],
+      "states": ["loading", "success", "error", "unauthorized"],
+      "prohibited_features": [
+        "airbnb_trademark_elements",
+        "booking_or_payment_ui",
+        "real_time_price_comparison",
+        "server_persistence_of_trip_inputs",
+        "public_contact_info_exposure",
+        "placeholder_or_lorem_text"
+      ]
+    },
+    {
+      "screen_id": "SCR-004",
+      "screen_type": "core",
+      "title": "동행 조회",
+      "route": "/mates",
+      "page_entry": "src/app/mates/page.tsx",
+      "page_owner_task_required": true,
+      "preview_required": true,
+      "starter_template_forbidden": false,
+      "device_variants": ["desktop-1440"],
+      "stitch_screen_ids": {
+        "desktop": "projects/2834073564133627186/screens/0d36171b01de4567a734f7e2dbe68ca3"
+      },
+      "section_order": [
+        "intro",
+        "filter_and_result_summary",
+        "mate_post_list_or_empty",
+        "list_detail_split_or_drawer",
+        "application_steps_guide",
+        "safety_report_block_cta"
+      ],
+      "min_content_counts": {
+        "mate_post_list_or_empty": 8,
+        "application_steps_guide": 3
+      },
+      "in_screen_overlays": [
+        { "id": "mate_detail_panel_or_drawer", "trigger": "mate_card_click", "desktop": "split_pane_right", "mobile": "bottom_to_fullscreen_drawer" }
+      ],
+      "states": ["loading", "success", "empty", "error", "unauthorized"],
+      "prohibited_features": [
+        "airbnb_trademark_elements",
+        "real_time_chat_or_video_or_location_share",
+        "public_contact_info_exposure",
+        "star_ratings_or_manner_score",
+        "minor_participation_ui",
+        "booking_or_payment_ui",
+        "placeholder_or_lorem_text"
+      ]
+    },
+    {
+      "screen_id": "SCR-005",
+      "screen_type": "core",
+      "title": "계정·관리",
+      "route": "/account",
+      "page_entry": "src/app/account/page.tsx",
+      "page_owner_task_required": true,
+      "preview_required": true,
+      "starter_template_forbidden": false,
+      "device_variants": ["desktop-1440"],
+      "stitch_screen_ids": {
+        "desktop": "projects/2834073564133627186/screens/d9ced155cb31490daa897d6f981dbc21"
+      },
+      "section_order": [
+        "account_intro_guest",
+        "auth_cards",
+        "post_login_benefits",
+        "security_notice",
+        "profile",
+        "my_activity_posts",
+        "my_activity_requests",
+        "my_activity_blocklist",
+        "report_management",
+        "external_url_settings"
+      ],
+      "tab_visibility": {
+        "account_intro_guest": ["guest"],
+        "auth_cards": ["guest"],
+        "post_login_benefits": ["guest"],
+        "security_notice": ["guest"],
+        "profile": ["member", "admin"],
+        "my_activity_posts": ["member", "admin"],
+        "my_activity_requests": ["member", "admin"],
+        "my_activity_blocklist": ["member", "admin"],
+        "report_management": ["admin"],
+        "external_url_settings": ["admin"]
+      },
+      "unassigned_role_tab_rendering": "not_rendered",
+      "in_screen_overlays": [],
+      "states": ["loading", "success", "empty", "error", "unauthorized"],
+      "prohibited_features": [
+        "airbnb_trademark_elements",
+        "complex_admin_dashboard_charts",
+        "identity_document_upload_ui",
+        "general_purpose_audit_log_ui",
+        "exact_birthdate_storage_or_display",
+        "placeholder_or_lorem_text"
+      ]
+    }
+  ],
+  "technical_routes": [
+    {
+      "type": "auth_callback",
+      "route": "/auth/callback",
+      "path": "src/app/auth/callback/route.ts",
+      "counted_as_screen": false,
+      "note": "Supabase 이메일 인증·매직링크 콜백 처리"
+    },
+    {
+      "type": "api_route",
+      "route": "/api/*",
+      "path": "src/app/api/**/route.ts",
+      "counted_as_screen": false,
+      "note": "신고 접수, 참가 요청 처리 등 필요한 최소 범위의 서버 Route Handler. SCR-003 항공/숙소 폼은 서버 API 없이 Client Component 상태로만 처리."
+    },
+    {
+      "type": "not_found",
+      "route": "*",
+      "path": "src/app/not-found.tsx",
+      "counted_as_screen": false,
+      "note": "전역 404, 홈 복귀 CTA 포함"
+    },
+    {
+      "type": "error_boundary",
+      "route": "*",
+      "path": "src/app/error.tsx",
+      "counted_as_screen": false,
+      "note": "전역 500/런타임 오류 경계, 재시도 CTA 포함"
+    }
+  ],
+  "required_navigation": [
+    { "from": "SCR-001", "to": "SCR-003", "trigger": "hero_cta_start_travel_prep" },
+    { "from": "SCR-001", "to": "SCR-004", "trigger": "recent_mate_posts_view_all_or_card_click" },
+    { "from": "SCR-001", "to": "SCR-002", "trigger": "free_traveler_summary_cta" },
+    { "from": "SCR-001", "to": "SCR-005", "trigger": "header_login_or_profile_icon" },
+    { "from": "SCR-002", "to": "SCR-001", "trigger": "memorable_destination_card_click_opens_detail_drawer" },
+    { "from": "SCR-002", "to": "SCR-003", "trigger": "cta_banner_plan_trip" },
+    { "from": "SCR-002", "to": "SCR-004", "trigger": "cta_banner_find_mate" },
+    { "from": "SCR-003", "to": "SCR-001", "trigger": "disclosure_tip_link_to_country_safety_drawer" },
+    { "from": "SCR-003", "to": "SCR-004", "trigger": "mate_post_created_redirect_to_detail" },
+    { "from": "SCR-003", "to": "SCR-005", "trigger": "mate_tab_login_required_prompt" },
+    { "from": "SCR-004", "to": "SCR-003", "trigger": "write_mate_post_cta" },
+    { "from": "SCR-004", "to": "SCR-005", "trigger": "apply_report_or_block_requires_login" },
+    { "from": "SCR-004", "to": "SCR-003", "trigger": "safety_banner_plan_trip_cta" },
+    { "from": "SCR-005", "to": "SCR-004", "trigger": "my_post_or_request_item_click" },
+    { "from": "SCR-005", "to": "SCR-001", "trigger": "logout" },
+    { "from": "SCR-*", "to": "SCR-001", "trigger": "header_nav_home" },
+    { "from": "SCR-*", "to": "SCR-002", "trigger": "header_nav_about" },
+    { "from": "SCR-*", "to": "SCR-003", "trigger": "header_nav_travel_tools" },
+    { "from": "SCR-*", "to": "SCR-004", "trigger": "header_nav_mates" },
+    { "from": "SCR-*", "to": "SCR-005", "trigger": "header_nav_account" }
+  ],
+  "completion_checks": {
+    "route_uniqueness": true,
+    "page_entry_uniqueness": true,
+    "screen_count": 5,
+    "core_screens": ["SCR-001", "SCR-003", "SCR-004", "SCR-005"],
+    "auxiliary_screens": ["SCR-002"]
+  }
+}

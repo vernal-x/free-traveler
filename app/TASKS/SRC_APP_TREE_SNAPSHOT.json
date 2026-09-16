@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-09-16T12:47:58.912589+00:00",
+  "src_app_dir": "src/app",
+  "existing_files": [
+    "src/app/favicon.ico",
+    "src/app/globals.css",
+    "src/app/layout.tsx",
+    "src/app/page.tsx"
+  ],
+  "note": "gen-tasklist must diff planned Expected Files against existing_files instead of assuming a blank slate (rule 4)."
+}

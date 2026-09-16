@@ -1,0 +1,579 @@
+{
+  "schema_version": "traveler-wave-state-v1",
+  "generated_at": "2026-09-16T12:47:58Z",
+  "waves": [
+    {
+      "wave_id": "W01",
+      "title": "2. Airbnb 스타일 공통 UI, 정적 데이터, Layout",
+      "task_ids": [
+        "DATA-DESTINATIONS",
+        "DATA-REPRESENTATIVE",
+        "DATA-SAFETY",
+        "TOOL-DESIGN-TOKENS",
+        "TOOL-POLICY-PAGES",
+        "TOOL-SEO-METADATA"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W02",
+      "title": "2. Airbnb 스타일 공통 UI, 정적 데이터, Layout",
+      "task_ids": [
+        "SA-TOAST-NOTIFICATIONS",
+        "TOOL-CONTENT-VALIDATION-SCRIPT",
+        "TOOL-ERROR-NOTFOUND"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W03",
+      "title": "2. Airbnb 스타일 공통 UI, 정적 데이터, Layout",
+      "task_ids": [
+        "TOOL-LAYOUT-SHELL"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W04",
+      "title": "3. Supabase Auth, 6개 Table, 기본 RLS",
+      "task_ids": [
+        "DB-SCHEMA-BASE"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W05",
+      "title": "3. Supabase Auth, 6개 Table, 기본 RLS",
+      "task_ids": [
+        "DB-ACCESS",
+        "DB-RLS-BASE",
+        "DB-SEED-BASE"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W06",
+      "title": "3. Supabase Auth, 6개 Table, 기본 RLS",
+      "task_ids": [
+        "AUTH-EMAIL-ADULT",
+        "TEST-RLS-BASIC"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W07",
+      "title": "4. SCR-001 메인 Component와 Page Owner",
+      "task_ids": [
+        "SA-FAVORITES-LOCALSTORAGE"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W08",
+      "title": "4. SCR-001 메인 Component와 Page Owner",
+      "task_ids": [
+        "CMP-SCR001-ABOUT-SUMMARY",
+        "CMP-SCR001-DESTINATION-GRIDS",
+        "CMP-SCR001-HERO",
+        "CMP-SCR001-SAFETY-GRID-DRAWER",
+        "CMP-SCR001-THEME-CHIPS"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W09",
+      "title": "4. SCR-001 메인 Component와 Page Owner",
+      "task_ids": [
+        "CMP-SCR001-DESTINATION-DRAWER",
+        "CMP-SCR001-MATE-TEASER"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W10",
+      "title": "4. SCR-001 메인 Component와 Page Owner",
+      "task_ids": [
+        "PAGE-SCR001"
+      ],
+      "status": "pending",
+      "checkpoint_required": true,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W11",
+      "title": "5. SCR-002 대표 소개 Component와 Page Owner",
+      "task_ids": [
+        "CMP-SCR002-COUNTRIES-CHIPS",
+        "CMP-SCR002-GALLERY",
+        "CMP-SCR002-HERO-STATS",
+        "CMP-SCR002-INTRO-PHILOSOPHY",
+        "CMP-SCR002-RECOMMEND-CTA",
+        "CMP-SCR002-TIMELINE"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W12",
+      "title": "5. SCR-002 대표 소개 Component와 Page Owner",
+      "task_ids": [
+        "PAGE-SCR002"
+      ],
+      "status": "pending",
+      "checkpoint_required": true,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W13",
+      "title": "6. SCR-003 여행 입력·외부 이동·동행글 입력 Component와 Page Owner",
+      "task_ids": [
+        "CMP-SCR003-INTRO-TABS"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W14",
+      "title": "6. SCR-003 여행 입력·외부 이동·동행글 입력 Component와 Page Owner",
+      "task_ids": [
+        "CMP-SCR003-DISCLOSURE-TIPS",
+        "CMP-SCR003-FLIGHT-FORM",
+        "CMP-SCR003-HOTEL-FORM",
+        "SA-MATE-POST"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W15",
+      "title": "6. SCR-003 여행 입력·외부 이동·동행글 입력 Component와 Page Owner",
+      "task_ids": [
+        "CMP-SCR003-MATE-COMPOSER"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W16",
+      "title": "6. SCR-003 여행 입력·외부 이동·동행글 입력 Component와 Page Owner",
+      "task_ids": [
+        "PAGE-SCR003"
+      ],
+      "status": "pending",
+      "checkpoint_required": true,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W17",
+      "title": "7. SCR-004 동행 목록·상세·신청 Component와 Page Owner",
+      "task_ids": [
+        "CMP-SCR004-FILTER-BAR",
+        "SA-BLOCK",
+        "SA-REPORT"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W18",
+      "title": "7. SCR-004 동행 목록·상세·신청 Component와 Page Owner",
+      "task_ids": [
+        "CMP-SCR004-MATE-DETAIL",
+        "CMP-SCR004-MATE-LIST",
+        "CMP-SCR004-REPORT-BLOCK",
+        "SA-MATE-APPLICATION"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W19",
+      "title": "7. SCR-004 동행 목록·상세·신청 Component와 Page Owner",
+      "task_ids": [
+        "CMP-SCR004-APPLY-FLOW"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W20",
+      "title": "7. SCR-004 동행 목록·상세·신청 Component와 Page Owner",
+      "task_ids": [
+        "PAGE-SCR004"
+      ],
+      "status": "pending",
+      "checkpoint_required": true,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W21",
+      "title": "8. SCR-005 계정·내 활동·간단 관리자 Component와 Page Owner",
+      "task_ids": [
+        "SA-EXTERNAL-URL-SETTINGS"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W22",
+      "title": "8. SCR-005 계정·내 활동·간단 관리자 Component와 Page Owner",
+      "task_ids": [
+        "CMP-SCR005-ADMIN-URL-SETTINGS",
+        "CMP-SCR005-GUEST-AUTH",
+        "SA-ACCOUNT-DELETE"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W23",
+      "title": "8. SCR-005 계정·내 활동·간단 관리자 Component와 Page Owner",
+      "task_ids": [
+        "CMP-SCR005-ADMIN-REPORTS",
+        "CMP-SCR005-MY-ACTIVITY",
+        "CMP-SCR005-PROFILE"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W24",
+      "title": "8. SCR-005 계정·내 활동·간단 관리자 Component와 Page Owner",
+      "task_ids": [
+        "PAGE-SCR005"
+      ],
+      "status": "pending",
+      "checkpoint_required": true,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W25",
+      "title": "9. Unit·Playwright·접근성·CI",
+      "task_ids": [
+        "E2E-PUBLIC-SMOKE",
+        "UNIT-CONTACT-DETECTION",
+        "UNIT-MATE-STATE",
+        "UNIT-TRAVEL-DATES"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W26",
+      "title": "9. Unit·Playwright·접근성·CI",
+      "task_ids": [
+        "CI-PIPELINE",
+        "E2E-MATE-AUTH",
+        "E2E-TRAVEL-TOOLS",
+        "MANUAL-RESPONSIVE-A11Y-CHECK"
+      ],
+      "status": "pending",
+      "checkpoint_required": false,
+      "checkpoint_result": null
+    },
+    {
+      "wave_id": "W27",
+      "title": "10. Vercel Preview와 Release 확인",
+      "task_ids": [
+        "RELEASE-VERCEL-SUPABASE-CHECK"
+      ],
+      "status": "pending",
+      "checkpoint_required": true,
+      "checkpoint_result": null
+    }
+  ],
+  "current_wave": null,
+  "waiting_for_preview": false,
+  "tasks": {
+    "AUTH-EMAIL-ADULT": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CI-PIPELINE": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR001-ABOUT-SUMMARY": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR001-DESTINATION-DRAWER": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR001-DESTINATION-GRIDS": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR001-HERO": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR001-MATE-TEASER": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR001-SAFETY-GRID-DRAWER": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR001-THEME-CHIPS": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR002-COUNTRIES-CHIPS": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR002-GALLERY": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR002-HERO-STATS": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR002-INTRO-PHILOSOPHY": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR002-RECOMMEND-CTA": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR002-TIMELINE": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR003-DISCLOSURE-TIPS": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR003-FLIGHT-FORM": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR003-HOTEL-FORM": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR003-INTRO-TABS": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR003-MATE-COMPOSER": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR004-APPLY-FLOW": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR004-FILTER-BAR": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR004-MATE-DETAIL": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR004-MATE-LIST": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR004-REPORT-BLOCK": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR005-ADMIN-REPORTS": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR005-ADMIN-URL-SETTINGS": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR005-GUEST-AUTH": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR005-MY-ACTIVITY": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "CMP-SCR005-PROFILE": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "DATA-DESTINATIONS": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "DATA-REPRESENTATIVE": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "DATA-SAFETY": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "DB-ACCESS": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "DB-RLS-BASE": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "DB-SCHEMA-BASE": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "DB-SEED-BASE": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "E2E-MATE-AUTH": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "E2E-PUBLIC-SMOKE": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "E2E-TRAVEL-TOOLS": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "MANUAL-RESPONSIVE-A11Y-CHECK": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "PAGE-SCR001": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "PAGE-SCR002": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "PAGE-SCR003": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "PAGE-SCR004": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "PAGE-SCR005": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "RELEASE-VERCEL-SUPABASE-CHECK": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "SA-ACCOUNT-DELETE": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "SA-BLOCK": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "SA-EXTERNAL-URL-SETTINGS": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "SA-FAVORITES-LOCALSTORAGE": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "SA-MATE-APPLICATION": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "SA-MATE-POST": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "SA-REPORT": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "SA-TOAST-NOTIFICATIONS": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "TEST-RLS-BASIC": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "TOOL-CONTENT-VALIDATION-SCRIPT": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "TOOL-DESIGN-TOKENS": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "TOOL-ERROR-NOTFOUND": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "TOOL-LAYOUT-SHELL": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "TOOL-POLICY-PAGES": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "TOOL-SEO-METADATA": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "UNIT-CONTACT-DETECTION": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "UNIT-MATE-STATE": {
+      "status": "PENDING",
+      "updated_at": null
+    },
+    "UNIT-TRAVEL-DATES": {
+      "status": "PENDING",
+      "updated_at": null
+    }
+  },
+  "last_run": null
+}

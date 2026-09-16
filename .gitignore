@@ -1,0 +1,7 @@
+# Free Traveler repo root — scope is app/ + design-reference/ only.
+# The legacy top-level docs/ and src/ (pre-app/ drafts, superseded by
+# app/docs/ and app/src/) are intentionally excluded from this repository.
+/docs/
+/src/
+
+.DS_Store
