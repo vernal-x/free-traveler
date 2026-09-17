@@ -26,7 +26,7 @@
 | **Supabase State** | 미연결 — `.env.local` 없음, `@supabase/supabase-js`/`@supabase/ssr` 미설치, `supabase/` 마이그레이션 디렉터리 없음(`DB-SCHEMA-BASE` 등 DB Task 미착수) |
 | **Vercel Preview URL** | 없음 — 배포 이력 없음 |
 | **Screen Checkpoints** | 아래 "Screen Checkpoints" 표 참고 — 전부 `PENDING` |
-| **Playwright State** | 미설치 — `package.json`에 `@playwright/test` 없음, `e2e/` 스펙 파일 없음(`E2E-*` Task 미착수) |
+| **Playwright State** | 패키지 설치됨(`@playwright/test`, `npm run test:e2e`/`test:e2e:public` Script 등록) — 단 `playwright.config.ts`와 `e2e/` 스펙 파일은 아직 없음(`E2E-*` Task 미착수, 실행하면 즉시 실패) |
 | **Deferred Items** | 24건 EXCLUDED(REQ-FUNC 11 + REQ-NF 13) — `docs/PROJECT_SCOPE.md`, `TASKS/00_TASK_LIST.md` §12 NON_IMPLEMENTATION 참고 |
 | **Next Action** | 아래 "다음 행동" 참고 |
 

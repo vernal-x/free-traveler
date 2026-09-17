@@ -282,7 +282,7 @@ scripts/                            # validate_inputs.py, audit_tasks.py, 콘텐
 |---|---|---|---|
 | 1 | `.env.local`(또는 동등 환경변수 파일) — 저장소에 존재하지 않음(`.env*`는 `.gitignore` 대상) | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` 값이 아직 없음 | `AUTH-EMAIL-ADULT`, `DB-*`, `SA-*` Task 착수 전 Supabase 프로젝트 연결 필요 |
 | 2 | `@supabase/supabase-js`(또는 `@supabase/ssr`) — `package.json`에 미설치 | `package.json` 확인 | §9 Browser/Server Client 구현 전 설치 필요 |
-| 3 | `vitest`, `@testing-library/react`, `@playwright/test` — `package.json`에 미설치 | `package.json` 확인 | `UNIT-*`, `TEST-RLS-BASIC`, `E2E-*` Task 착수 전 설치 필요 |
+| 3 | `@testing-library/react` — `package.json`에 미설치(`vitest`, `@playwright/test`는 설치됨, `npm run test:unit`/`test:e2e` Script 등록됨) | `package.json` 확인 | 실제 컴포넌트 Unit Test를 작성하는 `UNIT-*` Task 착수 전 설치 필요. `TEST-RLS-BASIC`은 컴포넌트 렌더링이 아니므로 무관 |
 | 4 | `supabase/` 디렉터리(마이그레이션) — 저장소에 없음 | 파일 트리 확인 | `DB-SCHEMA-BASE` 착수 전 `supabase init` 또는 동등 절차 필요 |
 | 5 | `.github/workflows/` — 저장소에 없음 | 파일 트리 확인 | `CI-PIPELINE` Task 착수 전 필요 |
 | 6 | `FLIGHT_OUTBOUND_URL_DEFAULT`, `HOTEL_OUTBOUND_URL_DEFAULT` 환경변수 — 정의되지 않음 | 환경변수 미설정 | `DB-SEED-BASE`(초기 `external_link_settings` 값), `SA-EXTERNAL-URL-SETTINGS` 착수 전 필요 |

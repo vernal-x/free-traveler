@@ -1,6 +1,6 @@
 # Task Dependency DAG
 
-**생성:** `scripts/build_waves.py` — 2026-09-16T12:47:58Z
+**생성:** `scripts/build_waves.py` — 2026-09-17T12:02:00Z
 **Task 수:** 65 · **Depends On 엣지 수:** 139
 
 이 문서는 읽기 전용 산출물이다 — 실제 의존 관계는 `TASKS/TASK-<ID>.md`의 `## Depends On` 절이 정본이며, 이 문서는 그것을 그래프로 요약한 것이다.

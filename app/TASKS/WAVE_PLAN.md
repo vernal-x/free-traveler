@@ -1,6 +1,6 @@
 # Wave Plan
 
-**생성:** `scripts/build_waves.py` — 2026-09-16T12:47:58Z
+**생성:** `scripts/build_waves.py` — 2026-09-17T12:02:00Z
 **상태:** 정적 문서(사람이 직접 고쳐도 된다) — 실제 실행 순서는 이 표가 아니라 각 Task의 `Depends On`이 결정한다. 이 표는 "이 Wave에 무엇이 포함되는가"와 "어디서 사람이 멈춰서 Preview를 봐야 하는가"만 정의한다(`.claude/commands/run-wave.md`).
 
 ## Wave 그룹 요약

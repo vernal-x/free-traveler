@@ -57,6 +57,21 @@ Algorithm (kept deliberately simple — no retry loops, no auto-fix passes):
 Exit codes:
   0  waves built successfully (prints the summary described in "종료")
   1  input missing, or a genuine cycle/ordering violation was found
+
+CLI flags:
+  --check   Read-only "Wave 계약 검사" mode (used by `npm run validate` /
+            `npm run ci`, package.json). Runs the exact same cycle-detection
+            and Wave-order validation as the default mode, but never writes
+            TASKS/TASK_DAG.md, TASKS/WAVE_PLAN.md, TASKS/WAVE_STATE.json, or
+            TASKS/TASK_MANIFEST.csv. This matters once Wave execution has
+            actually started: the default (writing) mode always resets
+            WAVE_STATE.json's per-Task status back to PENDING, which would
+            silently wipe real progress if it were re-run on every CI push.
+            `--check` only proves the Manifest's dependency graph is still
+            Wave-able (no cycles, a valid Wave ordering exists) — it does
+            not diff the result against the currently committed
+            WAVE_PLAN.md/WAVE_STATE.json, so it cannot detect a hand-edited
+            file drifting from what a fresh build would produce.
 """
 from __future__ import annotations
 
@@ -539,6 +554,7 @@ def write_manifest_with_wave_id(rows: list[dict], wave_of: dict[str, str]) -> No
 
 
 def main() -> None:
+    check_only = "--check" in sys.argv[1:]
     generated_at = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
     try:
@@ -558,12 +574,13 @@ def main() -> None:
         print(f"[build_waves] FAIL — 순환 의존성 {len(cycles)}건 발견, Wave를 생성할 수 없음.")
         for i, cyc in enumerate(cycles, 1):
             print(f"  {i}. {' -> '.join(cyc)}")
-        # still write the DAG so the cycle is visible/diagnosable
-        group_partial = {
-            tid: classify_group(tid, category_of[tid], screen_of[tid]) for tid in ids
-        }
-        write_task_dag(ids, deps, level, group_partial, cycles, generated_at, category_of)
-        print(f"[build_waves] wrote {rel(DAG_PATH)} (순환 위치 확인용, WAVE_PLAN/WAVE_STATE는 생성하지 않음)")
+        if not check_only:
+            # still write the DAG so the cycle is visible/diagnosable
+            group_partial = {
+                tid: classify_group(tid, category_of[tid], screen_of[tid]) for tid in ids
+            }
+            write_task_dag(ids, deps, level, group_partial, cycles, generated_at, category_of)
+            print(f"[build_waves] wrote {rel(DAG_PATH)} (순환 위치 확인용, WAVE_PLAN/WAVE_STATE는 생성하지 않음)")
         sys.exit(1)
 
     group = {tid: classify_group(tid, category_of[tid], screen_of[tid]) for tid in ids}
@@ -618,15 +635,18 @@ def main() -> None:
             print(f"  - {v}")
         sys.exit(1)
 
-    write_task_dag(ids, deps, level, group, cycles, generated_at, category_of)
-    write_wave_plan(waves, generated_at)
-    write_wave_state(waves, sorted(ids), generated_at)
-    write_manifest_with_wave_id(rows, wave_of_task)
+    if check_only:
+        print("[build_waves] --check — 읽기 전용 검사, 파일을 쓰지 않음")
+    else:
+        write_task_dag(ids, deps, level, group, cycles, generated_at, category_of)
+        write_wave_plan(waves, generated_at)
+        write_wave_state(waves, sorted(ids), generated_at)
+        write_manifest_with_wave_id(rows, wave_of_task)
 
-    print(f"[build_waves] wrote {rel(DAG_PATH)}")
-    print(f"[build_waves] wrote {rel(WAVE_PLAN_PATH)}")
-    print(f"[build_waves] wrote {rel(WAVE_STATE_PATH)}")
-    print(f"[build_waves] wrote {rel(MANIFEST_PATH)} (wave_id 열 추가)")
+        print(f"[build_waves] wrote {rel(DAG_PATH)}")
+        print(f"[build_waves] wrote {rel(WAVE_PLAN_PATH)}")
+        print(f"[build_waves] wrote {rel(WAVE_STATE_PATH)}")
+        print(f"[build_waves] wrote {rel(MANIFEST_PATH)} (wave_id 열 추가)")
     print()
 
     if adjustments:
@@ -652,7 +672,7 @@ def main() -> None:
         print(f"  {tid} -> {wid} (group {w['group']}) — 해당 그룹의 마지막 Wave: {'예' if is_last_in_group else '아니오'}")
 
     print()
-    print("BUILD_WAVES_DONE")
+    print("BUILD_WAVES_CHECK_PASS" if check_only else "BUILD_WAVES_DONE")
     sys.exit(0)
 
 
