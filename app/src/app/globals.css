@@ -1,26 +1,117 @@
 @import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+/**
+ * design-reference/D-001/DESIGN.md(LOCKED)의 Color/Typography/Spacing/Radius/Shadow
+ * 토큰만 반영한다. 이 표에 없는 임의 색상·수치는 추가하지 않는다(Functional AC,
+ * Do Not "디자인 토큰 없는 임의 색상"). Tailwind v4는 `--color-*`/`--text-*`/
+ * `--spacing-*`/`--radius-*`/`--shadow-*` 네임스페이스에서 유틸리티 클래스를 자동
+ * 생성하므로(예: --color-primary → bg-primary/text-primary), 각 토큰을 이 네임스페이스
+ * 그대로 선언한다.
+ */
+@theme {
+  /* Color Token */
+  --color-canvas: #ffffff;
+  --color-surface-soft: #f7f8f9;
+  --color-surface-strong: #f0f1f3;
+  --color-text-primary: #2a2d33;
+  --color-text-secondary: #565b63;
+  --color-text-muted: #868c94;
+  --color-text-muted-soft: #aeb3ba;
+  --color-hairline: #e3e6ea;
+  --color-hairline-soft: #eef0f3;
+  --color-border-strong: #c7ccd2;
+  --color-primary: #ff6b4a;
+  --color-primary-active: #e5502e;
+  --color-primary-tint: #ffe4da;
+  --color-on-primary: #ffffff;
+  --color-danger: #d93a3a;
+  --color-danger-strong: #b42323;
+  --color-warning: #c9770a;
+  --color-success: #1e8e5a;
+  --color-focus-ring: #2a2d33;
+
+  /* Typography — Inter + OS 한글 폰트 스택만 사용(Proprietary 폰트 파일 미포함) */
+  --font-sans:
+    "Inter", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Malgun Gothic", "Noto Sans KR", sans-serif;
+
+  --text-display-xl: 32px;
+  --text-display-xl--line-height: 1.3;
+  --text-display-xl--font-weight: 700;
+
+  --text-display-lg: 24px;
+  --text-display-lg--line-height: 1.35;
+  --text-display-lg--font-weight: 700;
+
+  --text-display-md: 20px;
+  --text-display-md--line-height: 1.4;
+  --text-display-md--font-weight: 600;
+
+  --text-title-md: 16px;
+  --text-title-md--line-height: 1.4;
+  --text-title-md--font-weight: 600;
+
+  --text-title-sm: 15px;
+  --text-title-sm--line-height: 1.4;
+  --text-title-sm--font-weight: 500;
+
+  --text-body-md: 16px;
+  --text-body-md--line-height: 1.6;
+  --text-body-md--font-weight: 400;
+
+  --text-body-sm: 14px;
+  --text-body-sm--line-height: 1.5;
+  --text-body-sm--font-weight: 400;
+
+  --text-caption: 13px;
+  --text-caption--line-height: 1.4;
+  --text-caption--font-weight: 500;
+
+  --text-badge: 12px;
+  --text-badge--line-height: 1.3;
+  --text-badge--font-weight: 600;
+
+  --text-button: 15px;
+  --text-button--line-height: 1.3;
+  --text-button--font-weight: 600;
+
+  /* Spacing */
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+  --spacing-section-desktop: 80px;
+  --spacing-section-mobile: 48px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+
+  /* Shadow */
+  --shadow-card:
+    0 0 0 1px rgba(0, 0, 0, 0.02), 0 2px 6px rgba(0, 0, 0, 0.04),
+    0 4px 8px rgba(0, 0, 0, 0.08);
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: var(--color-canvas);
+  --foreground: var(--color-text-primary);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+/* Do: 키보드 포커스 링(`focus-ring`)은 코랄(primary)과 분리해 항상 표시한다. */
+:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
 }

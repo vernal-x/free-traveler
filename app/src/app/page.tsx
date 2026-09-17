@@ -1,4 +1,18 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Free Traveler — 국내외 여행지·안전정보·동행 찾기",
+  description:
+    "국내외 여행지 정보와 국가별 안전정보를 한눈에 확인하고, 항공·숙소 조건을 정리한 뒤 함께할 동행까지 찾아보세요.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Free Traveler — 국내외 여행지·안전정보·동행 찾기",
+    description:
+      "국내외 여행지 정보와 국가별 안전정보를 한눈에 확인하고, 항공·숙소 조건을 정리한 뒤 함께할 동행까지 찾아보세요.",
+    type: "website",
+  },
+};
 
 export default function Home() {
   return (
