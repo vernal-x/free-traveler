@@ -25,7 +25,7 @@
         "TOOL-CONTENT-VALIDATION-SCRIPT",
         "TOOL-ERROR-NOTFOUND"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": false,
       "checkpoint_result": null
     },
@@ -311,7 +311,7 @@
       "checkpoint_result": null
     }
   ],
-  "current_wave": "W01",
+  "current_wave": "W02",
   "waiting_for_preview": false,
   "tasks": {
     "AUTH-EMAIL-ADULT": {
@@ -531,24 +531,24 @@
       "updated_at": null
     },
     "SA-TOAST-NOTIFICATIONS": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-17T01:00:00Z"
     },
     "TEST-RLS-BASIC": {
       "status": "PENDING",
       "updated_at": null
     },
     "TOOL-CONTENT-VALIDATION-SCRIPT": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-17T01:10:00Z"
     },
     "TOOL-DESIGN-TOKENS": {
       "status": "DONE",
       "updated_at": "2026-09-17T00:30:00Z"
     },
     "TOOL-ERROR-NOTFOUND": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-17T01:20:00Z"
     },
     "TOOL-LAYOUT-SHELL": {
       "status": "PENDING",
@@ -575,5 +575,5 @@
       "updated_at": null
     }
   },
-  "last_run": {"wave_id": "W01", "task_id": "TOOL-SEO-METADATA", "result": "DONE"}
+  "last_run": {"wave_id": "W02", "task_id": "TOOL-ERROR-NOTFOUND", "result": "DONE"}
 }
