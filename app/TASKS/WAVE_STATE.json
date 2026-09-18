@@ -68,7 +68,7 @@
         "AUTH-EMAIL-ADULT",
         "TEST-RLS-BASIC"
       ],
-      "status": "blocked",
+      "status": "completed",
       "checkpoint_required": false,
       "checkpoint_result": null
     },
@@ -535,8 +535,8 @@
       "updated_at": "2026-09-17T01:00:00Z"
     },
     "TEST-RLS-BASIC": {
-      "status": "BLOCKED",
-      "updated_at": "2026-09-18T01:00:00Z"
+      "status": "DONE",
+      "updated_at": "2026-09-18T02:00:00Z"
     },
     "TOOL-CONTENT-VALIDATION-SCRIPT": {
       "status": "DONE",
@@ -575,5 +575,5 @@
       "updated_at": null
     }
   },
-  "last_run": {"wave_id": "W06", "task_id": "TEST-RLS-BASIC", "result": "BLOCKED(테스트 인프라 없음 — 실제 Supabase 프로젝트 미연결)"}
+  "last_run": {"wave_id": "W06", "task_id": "TEST-RLS-BASIC", "result": "DONE(실제 Supabase 프로젝트 대상 14/14 PASS)"}
 }

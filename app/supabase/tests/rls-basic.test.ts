@@ -53,7 +53,6 @@ const SEED_USERS = {
 } as const;
 
 const POST_BY_MEMBER1 = "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa";
-const POST_BY_MEMBER2 = "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb";
 
 async function signedInClient(
   email: string,
@@ -155,18 +154,14 @@ describe.skipIf(!HAS_LIVE_SUPABASE)("RLS 기본 정책(TEST-RLS-BASIC)", () => {
       expect(data?.length ?? 0).toBeGreaterThan(0);
     });
 
-    it("본인도 대상 글 작성자도 아니면 신청 메시지를 조회할 수 없다(빈 결과)", async () => {
-      const { data, error } = await member1
+    it("신청자도 대상 글 작성자도 아니면 신청 메시지를 조회할 수 없다(빈 결과)", async () => {
+      // admin1은 시드 데이터의 어느 mate_application에도 신청자·대상 글 작성자로
+      // 등장하지 않는 완전한 제3자다. report/external_link_settings와 달리
+      // mate_application 정책에는 역할 기반(Moderator/Admin) 예외가 없으므로,
+      // Admin이라도 관계 없는 신청 메시지는 전혀 보이지 않아야 한다.
+      const { data, error } = await admin1
         .from("mate_application")
-        .select("id, message")
-        .eq("mate_post_id", POST_BY_MEMBER2)
-        .eq("applicant_id", "11111111-1111-1111-1111-111111111111")
-        .neq("mate_post_id", POST_BY_MEMBER1);
-      // member1은 POST_BY_MEMBER2(member2의 글)의 작성자가 아니고,
-      // 이 신청의 applicant도 아니므로(자신이 신청했더라도 다른 글 기준 필터라
-      // 실제로는 접근 가능한 유일한 신청 건은 이미 위 테스트에서 검증됨) —
-      // 여기서는 명확히 "제3자 신청 열람 불가"를 재확인하기 위해 member2의
-      // 글에 대해 member1이 신청자가 아닌 것으로 필터링한다.
+        .select("id, message");
       expect(error).toBeNull();
       expect(data?.length ?? 0).toBe(0);
     });
