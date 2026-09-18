@@ -45,7 +45,7 @@
       "task_ids": [
         "DB-SCHEMA-BASE"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": false,
       "checkpoint_result": null
     },
@@ -311,7 +311,7 @@
       "checkpoint_result": null
     }
   ],
-  "current_wave": "W03",
+  "current_wave": "W04",
   "waiting_for_preview": false,
   "tasks": {
     "AUTH-EMAIL-ADULT": {
@@ -455,8 +455,8 @@
       "updated_at": null
     },
     "DB-SCHEMA-BASE": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-18T00:10:00Z"
     },
     "DB-SEED-BASE": {
       "status": "PENDING",
@@ -575,5 +575,5 @@
       "updated_at": null
     }
   },
-  "last_run": {"wave_id": "W03", "task_id": "TOOL-LAYOUT-SHELL", "result": "DONE"}
+  "last_run": {"wave_id": "W04", "task_id": "DB-SCHEMA-BASE", "result": "DONE"}
 }
