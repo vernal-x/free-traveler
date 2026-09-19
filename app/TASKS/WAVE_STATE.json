@@ -161,7 +161,7 @@
         "CMP-SCR003-HOTEL-FORM",
         "SA-MATE-POST"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": false,
       "checkpoint_result": null
     },
@@ -311,7 +311,7 @@
       "checkpoint_result": null
     }
   ],
-  "current_wave": "W13",
+  "current_wave": "W14",
   "waiting_for_preview": false,
   "tasks": {
     "AUTH-EMAIL-ADULT": {
@@ -375,16 +375,16 @@
       "updated_at": "2026-09-19T02:22:33Z"
     },
     "CMP-SCR003-DISCLOSURE-TIPS": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T02:55:02Z"
     },
     "CMP-SCR003-FLIGHT-FORM": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T03:01:14Z"
     },
     "CMP-SCR003-HOTEL-FORM": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T03:03:06Z"
     },
     "CMP-SCR003-INTRO-TABS": {
       "status": "DONE",
@@ -523,8 +523,8 @@
       "updated_at": null
     },
     "SA-MATE-POST": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T03:15:18Z"
     },
     "SA-REPORT": {
       "status": "PENDING",
@@ -576,8 +576,8 @@
     }
   },
   "last_run": {
-    "wave_id": "W13",
-    "task_id": "CMP-SCR003-INTRO-TABS",
+    "wave_id": "W14",
+    "task_id": "SA-MATE-POST",
     "result": "DONE"
   }
 }
