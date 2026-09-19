@@ -193,7 +193,7 @@
         "SA-BLOCK",
         "SA-REPORT"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": false,
       "checkpoint_result": null
     },
@@ -311,7 +311,7 @@
       "checkpoint_result": null
     }
   ],
-  "current_wave": "W16",
+  "current_wave": "W17",
   "waiting_for_preview": false,
   "tasks": {
     "AUTH-EMAIL-ADULT": {
@@ -399,8 +399,8 @@
       "updated_at": null
     },
     "CMP-SCR004-FILTER-BAR": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T03:47:39Z"
     },
     "CMP-SCR004-MATE-DETAIL": {
       "status": "PENDING",
@@ -507,8 +507,8 @@
       "updated_at": null
     },
     "SA-BLOCK": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T03:49:49Z"
     },
     "SA-EXTERNAL-URL-SETTINGS": {
       "status": "PENDING",
@@ -527,8 +527,8 @@
       "updated_at": "2026-09-19T03:15:18Z"
     },
     "SA-REPORT": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T03:54:39Z"
     },
     "SA-TOAST-NOTIFICATIONS": {
       "status": "DONE",
@@ -576,8 +576,8 @@
     }
   },
   "last_run": {
-    "wave_id": "W16",
-    "task_id": "PAGE-SCR003",
+    "wave_id": "W17",
+    "task_id": "SA-REPORT",
     "result": "DONE"
   }
 }
