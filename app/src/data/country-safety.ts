@@ -1,7 +1,7 @@
 import {
   assertValidCountrySafetyDataset,
   type CountrySafetyInfo,
-} from "./country-safety.schema.js";
+} from "./country-safety.schema";
 
 /**
  * DATA-SAFETY — 국가 안전정보 정적 데이터.

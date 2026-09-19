@@ -1,7 +1,7 @@
 import {
   assertValidDestinationsDataset,
   type Destination,
-} from "./destinations.schema.js";
+} from "./destinations.schema";
 
 /**
  * DATA-DESTINATIONS — 여행지 정적 데이터.
