@@ -8,7 +8,10 @@ import { defineConfig, devices } from "@playwright/test";
  * baseURL로 쓰고, 이 경우 로컬 `npm run dev`를 기동하지 않는다 — 이미 살아있는
  * 원격 대상을 검사하는 것이므로 webServer 자체가 필요 없다.
  */
-const LOCAL_BASE_URL = "http://127.0.0.1:3000";
+// Next.js 16의 allowedDevOrigins 보호가 dev 서버에서 127.0.0.1 오리진의
+// 클라이언트 내비게이션을 조용히 차단하므로(에러 없이 URL이 그대로 머묾,
+// E2E-PUBLIC-SMOKE 실제 실행 중 발견) localhost를 사용한다.
+const LOCAL_BASE_URL = "http://localhost:3000";
 const previewBaseURL = process.env.PLAYWRIGHT_BASE_URL;
 const baseURL = previewBaseURL || LOCAL_BASE_URL;
 

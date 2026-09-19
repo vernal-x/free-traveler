@@ -270,9 +270,9 @@
       "task_ids": [
         "PAGE-SCR005"
       ],
-      "status": "in_progress",
+      "status": "completed",
       "checkpoint_required": true,
-      "checkpoint_result": null
+      "checkpoint_result": "CONFIRMED"
     },
     {
       "wave_id": "W25",
@@ -283,7 +283,7 @@
         "UNIT-MATE-STATE",
         "UNIT-TRAVEL-DATES"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": false,
       "checkpoint_result": null
     },
@@ -311,8 +311,8 @@
       "checkpoint_result": null
     }
   ],
-  "current_wave": "W24",
-  "waiting_for_preview": true,
+  "current_wave": "W25",
+  "waiting_for_preview": false,
   "tasks": {
     "AUTH-EMAIL-ADULT": {
       "status": "DONE",
@@ -467,8 +467,8 @@
       "updated_at": null
     },
     "E2E-PUBLIC-SMOKE": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T10:15:00Z"
     },
     "E2E-TRAVEL-TOOLS": {
       "status": "PENDING",
@@ -563,21 +563,21 @@
       "updated_at": "2026-09-17T00:50:00Z"
     },
     "UNIT-CONTACT-DETECTION": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T10:25:00Z"
     },
     "UNIT-MATE-STATE": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T10:32:00Z"
     },
     "UNIT-TRAVEL-DATES": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T10:38:00Z"
     }
   },
   "last_run": {
-    "wave_id": "W24",
-    "task_id": "PAGE-SCR005",
+    "wave_id": "W25",
+    "task_id": "UNIT-TRAVEL-DATES",
     "result": "DONE"
   }
 }
