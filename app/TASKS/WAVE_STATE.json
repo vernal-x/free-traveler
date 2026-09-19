@@ -181,7 +181,7 @@
       "task_ids": [
         "PAGE-SCR003"
       ],
-      "status": "pending",
+      "status": "in_progress",
       "checkpoint_required": true,
       "checkpoint_result": null
     },
@@ -311,8 +311,8 @@
       "checkpoint_result": null
     }
   ],
-  "current_wave": "W15",
-  "waiting_for_preview": false,
+  "current_wave": "W16",
+  "waiting_for_preview": true,
   "tasks": {
     "AUTH-EMAIL-ADULT": {
       "status": "DONE",
@@ -487,8 +487,8 @@
       "updated_at": "2026-09-19T02:29:23Z"
     },
     "PAGE-SCR003": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T03:32:53Z"
     },
     "PAGE-SCR004": {
       "status": "PENDING",
@@ -576,8 +576,8 @@
     }
   },
   "last_run": {
-    "wave_id": "W15",
-    "task_id": "CMP-SCR003-MATE-COMPOSER",
+    "wave_id": "W16",
+    "task_id": "PAGE-SCR003",
     "result": "DONE"
   }
 }
