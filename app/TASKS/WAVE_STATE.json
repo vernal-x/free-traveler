@@ -216,7 +216,7 @@
       "task_ids": [
         "CMP-SCR004-APPLY-FLOW"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": false,
       "checkpoint_result": null
     },
@@ -311,7 +311,7 @@
       "checkpoint_result": null
     }
   ],
-  "current_wave": "W18",
+  "current_wave": "W19",
   "waiting_for_preview": false,
   "tasks": {
     "AUTH-EMAIL-ADULT": {
@@ -395,8 +395,8 @@
       "updated_at": "2026-09-19T03:24:51Z"
     },
     "CMP-SCR004-APPLY-FLOW": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T04:40:49Z"
     },
     "CMP-SCR004-FILTER-BAR": {
       "status": "DONE",
@@ -576,8 +576,8 @@
     }
   },
   "last_run": {
-    "wave_id": "W18",
-    "task_id": "CMP-SCR004-REPORT-BLOCK",
+    "wave_id": "W19",
+    "task_id": "CMP-SCR004-APPLY-FLOW",
     "result": "DONE"
   }
 }
