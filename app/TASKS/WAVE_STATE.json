@@ -181,9 +181,9 @@
       "task_ids": [
         "PAGE-SCR003"
       ],
-      "status": "in_progress",
+      "status": "completed",
       "checkpoint_required": true,
-      "checkpoint_result": null
+      "checkpoint_result": "CONFIRMED"
     },
     {
       "wave_id": "W17",
@@ -312,7 +312,7 @@
     }
   ],
   "current_wave": "W16",
-  "waiting_for_preview": true,
+  "waiting_for_preview": false,
   "tasks": {
     "AUTH-EMAIL-ADULT": {
       "status": "DONE",
