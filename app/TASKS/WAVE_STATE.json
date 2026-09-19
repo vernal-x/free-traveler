@@ -103,7 +103,7 @@
         "CMP-SCR001-DESTINATION-DRAWER",
         "CMP-SCR001-MATE-TEASER"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": false,
       "checkpoint_result": null
     },
@@ -311,7 +311,7 @@
       "checkpoint_result": null
     }
   ],
-  "current_wave": "W08",
+  "current_wave": "W09",
   "waiting_for_preview": false,
   "tasks": {
     "AUTH-EMAIL-ADULT": {
@@ -327,8 +327,8 @@
       "updated_at": "2026-09-18T22:10:00Z"
     },
     "CMP-SCR001-DESTINATION-DRAWER": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T00:10:00Z"
     },
     "CMP-SCR001-DESTINATION-GRIDS": {
       "status": "DONE",
@@ -339,8 +339,8 @@
       "updated_at": "2026-09-18T22:50:00Z"
     },
     "CMP-SCR001-MATE-TEASER": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T00:25:00Z"
     },
     "CMP-SCR001-SAFETY-GRID-DRAWER": {
       "status": "DONE",
@@ -575,5 +575,5 @@
       "updated_at": null
     }
   },
-  "last_run": {"wave_id": "W08", "task_id": "CMP-SCR001-THEME-CHIPS", "result": "DONE"}
+  "last_run": {"wave_id": "W09", "task_id": "CMP-SCR001-MATE-TEASER", "result": "DONE"}
 }
