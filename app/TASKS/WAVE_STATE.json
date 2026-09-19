@@ -206,7 +206,7 @@
         "CMP-SCR004-REPORT-BLOCK",
         "SA-MATE-APPLICATION"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": false,
       "checkpoint_result": null
     },
@@ -311,7 +311,7 @@
       "checkpoint_result": null
     }
   ],
-  "current_wave": "W17",
+  "current_wave": "W18",
   "waiting_for_preview": false,
   "tasks": {
     "AUTH-EMAIL-ADULT": {
@@ -403,16 +403,16 @@
       "updated_at": "2026-09-19T03:47:39Z"
     },
     "CMP-SCR004-MATE-DETAIL": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T04:00:43Z"
     },
     "CMP-SCR004-MATE-LIST": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T04:04:30Z"
     },
     "CMP-SCR004-REPORT-BLOCK": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T04:16:53Z"
     },
     "CMP-SCR005-ADMIN-REPORTS": {
       "status": "PENDING",
@@ -519,8 +519,8 @@
       "updated_at": "2026-09-18T02:30:00Z"
     },
     "SA-MATE-APPLICATION": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T04:09:04Z"
     },
     "SA-MATE-POST": {
       "status": "DONE",
@@ -576,8 +576,8 @@
     }
   },
   "last_run": {
-    "wave_id": "W17",
-    "task_id": "SA-REPORT",
+    "wave_id": "W18",
+    "task_id": "CMP-SCR004-REPORT-BLOCK",
     "result": "DONE"
   }
 }

@@ -28,7 +28,7 @@ function isStale(verifiedAt: string): boolean {
 
 const ALERT_BADGE_CLASS: Record<CountrySafetyInfo["alertLevel"], string> = {
   안전: "bg-success text-on-primary",
-  여행유의: "bg-warning text-on-primary",
+  여행유의: "bg-info text-on-primary",
   여행자제: "bg-warning text-on-primary",
   출국권고: "bg-danger text-on-primary",
   여행금지: "bg-danger-strong text-on-primary",

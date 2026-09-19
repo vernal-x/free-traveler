@@ -259,16 +259,19 @@ Free Traveler는 **여행 편집물 + 안전 신뢰 정보 + 동행 커뮤니티
 | `color.primary-active` | `#E5502E` | 코랄 버튼 press 상태 |
 | `color.primary-tint` | `#FFE4DA` | 코랄 배경 위 은은한 톤(활성 필터 칩, 하이라이트) |
 | `color.on-primary` | `#FFFFFF` | 코랄 배경 위 텍스트 |
-| `color.danger` | `#D93A3A` | 오류 메시지, 폼 검증 실패 |
-| `color.danger-strong` | `#B42323` | 최상위 여행경보(여행금지/철수권고) 배지 |
-| `color.warning` | `#C9770A` | 주의·자제 경보, stale(재확인 필요) 배지 |
+| `color.danger` | `#D93A3A` | 오류 메시지, 폼 검증 실패, 출국권고 경보(3단계) |
+| `color.danger-strong` | `#B42323` | 최상위 여행경보(여행금지, 4단계) 배지 |
+| `color.warning` | `#C9770A` | 여행자제 경보(2단계), stale(재확인 필요) 배지 |
+| `color.info` | `#2563EB` | 여행유의 경보(1단계) 배지 |
 | `color.success` | `#1E8E5A` | 모집중, 승인완료 등 긍정 상태 배지 |
 | `color.focus-ring` | `#2A2D33` | 키보드 포커스 링(2px, 코랄과 별도) |
 
 **규칙**: 이 표에 없는 임의의 hex 색상을 화면에 새로 추가하지 않는다. 새로운 의미가 필요하면
-반드시 이 표에 토큰을 먼저 추가한 뒤 사용한다. `danger`/`danger-strong`/`warning`은 `primary`와
-색 계열이 겹치지 않도록 각각 붉은색·황토색 계열로 분리해 "위험 안내"와 "브랜드 CTA"가 혼동되지
-않게 한다.
+반드시 이 표에 토큰을 먼저 추가한 뒤 사용한다. `danger`/`danger-strong`/`warning`/`info`는
+`primary`와 색 계열이 겹치지 않도록 각각 붉은색·황토색·파란색 계열로 분리해 "위험 안내"와
+"브랜드 CTA"가 혼동되지 않게 한다. 안전정보 경보는 여행유의(1단계, `info`)·여행자제(2단계,
+`warning`)·출국권고(3단계, `danger`)·여행금지(4단계, `danger-strong`) 4단계로 표현한다(확정,
+`04_UIUX_PLAN.md` §3.1과 동일).
 
 ## Typography
 
