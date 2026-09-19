@@ -198,7 +198,7 @@ export const REPRESENTATIVE_PROFILE: RepresentativeProfile = {
   name: "여행 큐레이터 강지우",
   tagline: "50개국 넘게 걸어본 발로, 진짜 갈 만한 곳만 추립니다.",
   heroImage: {
-    url: "https://images.freetraveler.example/representative/hero-jiwoo.jpg",
+    url: "https://picsum.photos/seed/representative-hero-jiwoo/800/600",
     alt: "배낭을 메고 산 정상에서 카메라를 향해 웃고 있는 대표 강지우의 모습",
     caption: "뉴질랜드 퀸스타운 트레킹 중, 2023",
   },
@@ -305,47 +305,47 @@ export const REPRESENTATIVE_PROFILE: RepresentativeProfile = {
   ],
   gallery: [
     {
-      url: "https://images.freetraveler.example/representative/gallery-01.jpg",
+      url: "https://picsum.photos/seed/representative-gallery-01/800/600",
       alt: "네팔 안나푸르나 베이스캠프 정상에서 촬영한 설산 파노라마",
       caption: "안나푸르나 베이스캠프, 네팔 2015",
     },
     {
-      url: "https://images.freetraveler.example/representative/gallery-02.jpg",
+      url: "https://picsum.photos/seed/representative-gallery-02/800/600",
       alt: "프랑스 파리 에펠탑 앞에서 촬영한 야간 조명쇼 장면",
       caption: "에펠탑 야경, 프랑스 2017",
     },
     {
-      url: "https://images.freetraveler.example/representative/gallery-03.jpg",
+      url: "https://picsum.photos/seed/representative-gallery-03/800/600",
       alt: "뉴질랜드 퀸스타운 와카티푸 호수 앞 카약 체험 장면",
       caption: "와카티푸 호수 카약, 뉴질랜드 2019",
     },
     {
-      url: "https://images.freetraveler.example/representative/gallery-04.jpg",
+      url: "https://picsum.photos/seed/representative-gallery-04/800/600",
       alt: "제주 성산일출봉 앞 유채꽃밭에서 촬영한 봄 풍경",
       caption: "성산일출봉 유채꽃, 제주 2021",
     },
     {
-      url: "https://images.freetraveler.example/representative/gallery-05.jpg",
+      url: "https://picsum.photos/seed/representative-gallery-05/800/600",
       alt: "튀르키예 카파도키아 상공에 떠오른 수십 개의 열기구",
       caption: "열기구 투어, 튀르키예 2022",
     },
     {
-      url: "https://images.freetraveler.example/representative/gallery-06.jpg",
+      url: "https://picsum.photos/seed/representative-gallery-06/800/600",
       alt: "그리스 산토리니 이아마을 파란 돔 지붕과 에게해 일몰",
       caption: "이아마을 일몰, 그리스 2022",
     },
     {
-      url: "https://images.freetraveler.example/representative/gallery-07.jpg",
+      url: "https://picsum.photos/seed/representative-gallery-07/800/600",
       alt: "뉴질랜드 퀸스타운에서 번지점프를 뛰어내리는 순간",
       caption: "카와라우 다리 번지점프, 뉴질랜드 2023",
     },
     {
-      url: "https://images.freetraveler.example/representative/gallery-08.jpg",
+      url: "https://picsum.photos/seed/representative-gallery-08/800/600",
       alt: "인도네시아 발리 우붓 테갈랄랑 라이스 테라스 계단식 논",
       caption: "테갈랄랑 라이스 테라스, 발리 2024",
     },
     {
-      url: "https://images.freetraveler.example/representative/gallery-09.jpg",
+      url: "https://picsum.photos/seed/representative-gallery-09/800/600",
       alt: "베트남 다낭 바나힐 골든브릿지 위에서 내려다본 산악 전경",
       caption: "골든브릿지, 베트남 2024",
     },

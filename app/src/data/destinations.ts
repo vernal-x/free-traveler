@@ -35,7 +35,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["서울", "seoul", "경복궁", "홍대", "한강", "명동"],
     images: [
       {
-        url: "https://images.freetraveler.example/kr/seoul-gyeongbokgung.jpg",
+        url: "https://picsum.photos/seed/kr-seoul-gyeongbokgung/800/600",
         alt: "경복궁 근정전과 배경의 북악산이 함께 보이는 서울 도심 전경",
         caption: "경복궁 근정전, 서울",
       },
@@ -92,7 +92,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["부산", "busan", "해운대", "감천문화마을", "광안리"],
     images: [
       {
-        url: "https://images.freetraveler.example/kr/busan-gamcheon.jpg",
+        url: "https://picsum.photos/seed/kr-busan-gamcheon/800/600",
         alt: "알록달록한 계단식 집들이 바다를 향해 늘어선 부산 감천문화마을 전경",
         caption: "감천문화마을, 부산",
       },
@@ -144,7 +144,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["제주", "jeju", "성산일출봉", "한라산", "우도"],
     images: [
       {
-        url: "https://images.freetraveler.example/kr/jeju-seongsan.jpg",
+        url: "https://picsum.photos/seed/kr-jeju-seongsan/800/600",
         alt: "유채꽃밭 너머로 보이는 제주 성산일출봉의 응회구 전경",
         caption: "성산일출봉, 제주",
       },
@@ -196,7 +196,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["강릉", "gangneung", "안목해변", "경포호", "정동진"],
     images: [
       {
-        url: "https://images.freetraveler.example/kr/gangneung-anmok.jpg",
+        url: "https://picsum.photos/seed/kr-gangneung-anmok/800/600",
         alt: "커피 자판기와 카페들이 늘어선 강릉 안목해변 산책로",
         caption: "안목해변 커피거리, 강릉",
       },
@@ -248,7 +248,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["경주", "gyeongju", "불국사", "첨성대", "동궁과월지"],
     images: [
       {
-        url: "https://images.freetraveler.example/kr/gyeongju-cheomseongdae.jpg",
+        url: "https://picsum.photos/seed/kr-gyeongju-cheomseongdae/800/600",
         alt: "밤에 조명이 켜진 경주 첨성대와 주변 잔디밭",
         caption: "첨성대 야경, 경주",
       },
@@ -301,7 +301,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["전주", "jeonju", "한옥마을", "비빔밥", "남부시장"],
     images: [
       {
-        url: "https://images.freetraveler.example/kr/jeonju-hanok.jpg",
+        url: "https://picsum.photos/seed/kr-jeonju-hanok/800/600",
         alt: "기와지붕이 빼곡히 늘어선 전주한옥마을 전경",
         caption: "전주한옥마을, 전주",
       },
@@ -353,7 +353,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["여수", "yeosu", "여수밤바다", "오동도", "해상케이블카"],
     images: [
       {
-        url: "https://images.freetraveler.example/kr/yeosu-nightsea.jpg",
+        url: "https://picsum.photos/seed/kr-yeosu-nightsea/800/600",
         alt: "여수 밤바다 위로 케이블카 불빛이 비치는 야경",
         caption: "여수 해상케이블카 야경",
       },
@@ -405,7 +405,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["속초", "sokcho", "설악산", "속초해수욕장", "아바이마을"],
     images: [
       {
-        url: "https://images.freetraveler.example/kr/sokcho-seorak.jpg",
+        url: "https://picsum.photos/seed/kr-sokcho-seorak/800/600",
         alt: "단풍으로 물든 설악산 울산바위와 케이블카",
         caption: "설악산 울산바위, 속초",
       },
@@ -457,7 +457,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["통영", "tongyeong", "동피랑", "한려수도", "케이블카"],
     images: [
       {
-        url: "https://images.freetraveler.example/kr/tongyeong-dongpirang.jpg",
+        url: "https://picsum.photos/seed/kr-tongyeong-dongpirang/800/600",
         alt: "벽화로 뒤덮인 통영 동피랑마을 골목과 바다 전망",
         caption: "동피랑마을, 통영",
       },
@@ -509,7 +509,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["안동", "andong", "하회마을", "안동찜닭", "병산서원"],
     images: [
       {
-        url: "https://images.freetraveler.example/kr/andong-hahoe.jpg",
+        url: "https://picsum.photos/seed/kr-andong-hahoe/800/600",
         alt: "낙동강이 휘돌아 흐르는 안동 하회마을 초가와 기와집 전경",
         caption: "하회마을, 안동",
       },
@@ -563,7 +563,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["도쿄", "tokyo", "시부야", "아사쿠사", "신주쿠"],
     images: [
       {
-        url: "https://images.freetraveler.example/jp/tokyo-shibuya.jpg",
+        url: "https://picsum.photos/seed/jp-tokyo-shibuya/800/600",
         alt: "수많은 인파가 동시에 건너는 도쿄 시부야 스크램블 교차로",
         caption: "시부야 스크램블 교차로, 도쿄",
       },
@@ -615,7 +615,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["오사카", "osaka", "도톤보리", "오사카성", "유니버설스튜디오"],
     images: [
       {
-        url: "https://images.freetraveler.example/jp/osaka-dotonbori.jpg",
+        url: "https://picsum.photos/seed/jp-osaka-dotonbori/800/600",
         alt: "글리코 간판 네온사인이 빛나는 오사카 도톤보리 운하 야경",
         caption: "도톤보리, 오사카",
       },
@@ -667,7 +667,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["방콕", "bangkok", "왓아룬", "카오산로드", "수상시장"],
     images: [
       {
-        url: "https://images.freetraveler.example/th/bangkok-watarun.jpg",
+        url: "https://picsum.photos/seed/th-bangkok-watarun/800/600",
         alt: "차오프라야강 너머로 보이는 방콕 왓아룬 사원의 첨탑",
         caption: "왓아룬 사원, 방콕",
       },
@@ -725,7 +725,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     images: [
       {
-        url: "https://images.freetraveler.example/th/chiangmai-doisuthep.jpg",
+        url: "https://picsum.photos/seed/th-chiangmai-doisuthep/800/600",
         alt: "황금 불탑이 있는 치앙마이 도이수텝 사원 전경",
         caption: "왓프라탓 도이수텝, 치앙마이",
       },
@@ -777,7 +777,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["다낭", "danang", "바나힐", "호이안", "미케비치"],
     images: [
       {
-        url: "https://images.freetraveler.example/vn/danang-goldenbridge.jpg",
+        url: "https://picsum.photos/seed/vn-danang-goldenbridge/800/600",
         alt: "거대한 두 손 조형물이 다리를 받치고 있는 다낭 바나힐 골든브릿지",
         caption: "골든브릿지, 바나힐 다낭",
       },
@@ -829,7 +829,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["하노이", "hanoi", "호안끼엠호수", "구시가지", "하롱베이"],
     images: [
       {
-        url: "https://images.freetraveler.example/vn/hanoi-oldquarter.jpg",
+        url: "https://picsum.photos/seed/vn-hanoi-oldquarter/800/600",
         alt: "오토바이와 노점이 뒤섞인 하노이 구시가지 거리 풍경",
         caption: "하노이 구시가지",
       },
@@ -881,7 +881,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["파리", "paris", "에펠탑", "루브르", "몽마르트"],
     images: [
       {
-        url: "https://images.freetraveler.example/fr/paris-eiffel.jpg",
+        url: "https://picsum.photos/seed/fr-paris-eiffel/800/600",
         alt: "센강 다리 위에서 바라본 파리 에펠탑 야경",
         caption: "에펠탑 야경, 파리",
       },
@@ -938,7 +938,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["니스", "nice", "프롬나드데장글레", "예즈", "코트다쥐르"],
     images: [
       {
-        url: "https://images.freetraveler.example/fr/nice-promenade.jpg",
+        url: "https://picsum.photos/seed/fr-nice-promenade/800/600",
         alt: "지중해를 따라 이어지는 니스 프롬나드 데 장글레 해안 산책로",
         caption: "프롬나드 데 장글레, 니스",
       },
@@ -995,7 +995,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["로마", "rome", "콜로세움", "트레비분수", "바티칸"],
     images: [
       {
-        url: "https://images.freetraveler.example/it/rome-colosseum.jpg",
+        url: "https://picsum.photos/seed/it-rome-colosseum/800/600",
         alt: "석양 아래 웅장하게 서 있는 로마 콜로세움 외관",
         caption: "콜로세움, 로마",
       },
@@ -1047,7 +1047,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["피렌체", "florence", "두오모", "우피치미술관", "베키오다리"],
     images: [
       {
-        url: "https://images.freetraveler.example/it/florence-duomo.jpg",
+        url: "https://picsum.photos/seed/it-florence-duomo/800/600",
         alt: "붉은 돔 지붕이 인상적인 피렌체 두오모 대성당 전경",
         caption: "두오모 대성당, 피렌체",
       },
@@ -1110,7 +1110,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     images: [
       {
-        url: "https://images.freetraveler.example/es/barcelona-sagrada.jpg",
+        url: "https://picsum.photos/seed/es-barcelona-sagrada/800/600",
         alt: "가우디가 설계한 사그라다 파밀리아 성당의 독특한 첨탑 외관",
         caption: "사그라다 파밀리아, 바르셀로나",
       },
@@ -1162,7 +1162,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["세비야", "seville", "스페인광장", "플라멩코", "알카사르"],
     images: [
       {
-        url: "https://images.freetraveler.example/es/seville-plaza.jpg",
+        url: "https://picsum.photos/seed/es-seville-plaza/800/600",
         alt: "반원형으로 둘러싸인 세비야 스페인광장의 타일 장식과 다리",
         caption: "스페인광장, 세비야",
       },
@@ -1214,7 +1214,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["뉴욕", "newyork", "타임스퀘어", "센트럴파크", "자유의여신상"],
     images: [
       {
-        url: "https://images.freetraveler.example/us/newyork-timessquare.jpg",
+        url: "https://picsum.photos/seed/us-newyork-timessquare/800/600",
         alt: "대형 전광판 광고로 가득한 뉴욕 타임스퀘어의 밤 풍경",
         caption: "타임스퀘어 야경, 뉴욕",
       },
@@ -1273,7 +1273,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     images: [
       {
-        url: "https://images.freetraveler.example/us/la-hollywood.jpg",
+        url: "https://picsum.photos/seed/us-la-hollywood/800/600",
         alt: "언덕 위에 세워진 로스앤젤레스 할리우드 사인",
         caption: "할리우드 사인, 로스앤젤레스",
       },
@@ -1330,7 +1330,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["시드니", "sydney", "오페라하우스", "본다이비치", "하버브릿지"],
     images: [
       {
-        url: "https://images.freetraveler.example/au/sydney-operahouse.jpg",
+        url: "https://picsum.photos/seed/au-sydney-operahouse/800/600",
         alt: "시드니 항구 앞에 자리한 흰색 조개껍질 모양의 오페라하우스",
         caption: "시드니 오페라하우스",
       },
@@ -1389,7 +1389,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     images: [
       {
-        url: "https://images.freetraveler.example/au/melbourne-laneways.jpg",
+        url: "https://picsum.photos/seed/au-melbourne-laneways/800/600",
         alt: "그래피티 벽화로 가득한 멜버른 골목 호시어 레인",
         caption: "호시어 레인, 멜버른",
       },
@@ -1446,7 +1446,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["오클랜드", "auckland", "스카이타워", "와이헤케섬", "항구도시"],
     images: [
       {
-        url: "https://images.freetraveler.example/nz/auckland-skytower.jpg",
+        url: "https://picsum.photos/seed/nz-auckland-skytower/800/600",
         alt: "오클랜드 항구와 스카이타워가 함께 보이는 도심 전경",
         caption: "스카이타워, 오클랜드",
       },
@@ -1509,7 +1509,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     images: [
       {
-        url: "https://images.freetraveler.example/nz/queenstown-lake.jpg",
+        url: "https://picsum.photos/seed/nz-queenstown-lake/800/600",
         alt: "눈 덮인 산맥을 배경으로 한 와카티푸 호수와 퀸스타운 시내",
         caption: "와카티푸 호수, 퀸스타운",
       },
@@ -1562,7 +1562,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["런던", "london", "빅벤", "타워브릿지", "대영박물관"],
     images: [
       {
-        url: "https://images.freetraveler.example/gb/london-towerbridge.jpg",
+        url: "https://picsum.photos/seed/gb-london-towerbridge/800/600",
         alt: "템스강 위에 놓인 런던 타워브릿지의 고딕풍 첨탑",
         caption: "타워브릿지, 런던",
       },
@@ -1614,7 +1614,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["에든버러", "edinburgh", "에든버러성", "로열마일", "아서시트"],
     images: [
       {
-        url: "https://images.freetraveler.example/gb/edinburgh-castle.jpg",
+        url: "https://picsum.photos/seed/gb-edinburgh-castle/800/600",
         alt: "언덕 위 화산암 지형 위에 세워진 에든버러성 야경",
         caption: "에든버러성",
       },
@@ -1666,7 +1666,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["타이베이", "taipei", "101타워", "지우펀", "야시장"],
     images: [
       {
-        url: "https://images.freetraveler.example/tw/taipei-101.jpg",
+        url: "https://picsum.photos/seed/tw-taipei-101/800/600",
         alt: "타이베이 시내를 내려다보는 대나무 형상의 타이베이101 타워",
         caption: "타이베이101, 타이베이",
       },
@@ -1718,7 +1718,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["타이중", "taichung", "가오메이습지", "펑자야시장", "궁위안"],
     images: [
       {
-        url: "https://images.freetraveler.example/tw/taichung-gaomei.jpg",
+        url: "https://picsum.photos/seed/tw-taichung-gaomei/800/600",
         alt: "일몰 무렵 물에 비친 실루엣이 아름다운 타이중 가오메이습지 풍차",
         caption: "가오메이습지 일몰, 타이중",
       },
@@ -1775,7 +1775,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["발리", "bali", "우붓", "계단식논", "짜뜨히츠사원"],
     images: [
       {
-        url: "https://images.freetraveler.example/id/bali-ubud.jpg",
+        url: "https://picsum.photos/seed/id-bali-ubud/800/600",
         alt: "초록빛 계단식 논이 층층이 펼쳐진 발리 우붓 테갈랄랑 라이스 테라스",
         caption: "테갈랄랑 라이스 테라스, 우붓",
       },
@@ -1832,7 +1832,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["자카르타", "jakarta", "코타투아", "모나스", "이스티클랄모스크"],
     images: [
       {
-        url: "https://images.freetraveler.example/id/jakarta-monas.jpg",
+        url: "https://picsum.photos/seed/id-jakarta-monas/800/600",
         alt: "황금빛 불꽃 조형물이 얹힌 자카르타 모나스 독립기념탑",
         caption: "모나스 독립기념탑, 자카르타",
       },
@@ -1884,7 +1884,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["아테네", "athens", "파르테논", "아크로폴리스", "플라카"],
     images: [
       {
-        url: "https://images.freetraveler.example/gr/athens-parthenon.jpg",
+        url: "https://picsum.photos/seed/gr-athens-parthenon/800/600",
         alt: "아크로폴리스 언덕 위에 우뚝 선 아테네 파르테논 신전",
         caption: "파르테논 신전, 아테네",
       },
@@ -1936,7 +1936,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["산토리니", "santorini", "이아마을", "칼데라", "블루돔"],
     images: [
       {
-        url: "https://images.freetraveler.example/gr/santorini-oia.jpg",
+        url: "https://picsum.photos/seed/gr-santorini-oia/800/600",
         alt: "파란 돔 지붕의 교회와 하얀 벽 건물이 어우러진 산토리니 이아마을 전경",
         caption: "이아마을, 산토리니",
       },
@@ -1999,7 +1999,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     images: [
       {
-        url: "https://images.freetraveler.example/tr/istanbul-bluemosque.jpg",
+        url: "https://picsum.photos/seed/tr-istanbul-bluemosque/800/600",
         alt: "여러 개의 첨탑과 돔이 어우러진 이스탄불 블루모스크 야경",
         caption: "블루모스크, 이스탄불",
       },
@@ -2051,7 +2051,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["카파도키아", "cappadocia", "열기구", "괴레메", "동굴호텔"],
     images: [
       {
-        url: "https://images.freetraveler.example/tr/cappadocia-balloons.jpg",
+        url: "https://picsum.photos/seed/tr-cappadocia-balloons/800/600",
         alt: "기암괴석 지형 위로 수십 개의 열기구가 떠오르는 카파도키아 일출 풍경",
         caption: "열기구 투어, 카파도키아",
       },
@@ -2108,7 +2108,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["취리히", "zurich", "취리히호수", "반호프거리", "구시가지"],
     images: [
       {
-        url: "https://images.freetraveler.example/ch/zurich-lake.jpg",
+        url: "https://picsum.photos/seed/ch-zurich-lake/800/600",
         alt: "알프스 산맥을 배경으로 펼쳐진 취리히호수와 도심 전경",
         caption: "취리히호수",
       },
@@ -2165,7 +2165,7 @@ export const DESTINATIONS: Destination[] = [
     keywords: ["인터라켄", "interlaken", "융프라우", "브리엔츠호", "튠호"],
     images: [
       {
-        url: "https://images.freetraveler.example/ch/interlaken-jungfrau.jpg",
+        url: "https://picsum.photos/seed/ch-interlaken-jungfrau/800/600",
         alt: "만년설로 뒤덮인 융프라우 산맥이 보이는 인터라켄 초원",
         caption: "융프라우 전망, 인터라켄",
       },
