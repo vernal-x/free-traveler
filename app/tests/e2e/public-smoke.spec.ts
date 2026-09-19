@@ -50,7 +50,9 @@ test("E2E-PUBLIC-SMOKE 흐름 1: 홈 → 필터 적용 → 상세 진입 → 안
     .click();
   const safetyDialog = page.getByRole("dialog", { name: "일본 안전정보" });
   await expect(safetyDialog).toBeVisible();
-  await expect(safetyDialog.getByText("최종 확인일", { exact: false })).toBeVisible();
+  await expect(
+    safetyDialog.getByText("최종 확인일", { exact: false }),
+  ).toBeVisible();
 });
 
 test("E2E-PUBLIC-SMOKE 흐름 10: 대표 소개 페이지 진입 확인", async ({
@@ -58,9 +60,7 @@ test("E2E-PUBLIC-SMOKE 흐름 10: 대표 소개 페이지 진입 확인", async 
 }) => {
   await page.goto("/");
 
-  await page
-    .getByRole("link", { name: "대표 소개 보러가기" })
-    .click();
+  await page.getByRole("link", { name: "대표 소개 보러가기" }).click();
 
   await expect(page).toHaveURL(/\/about\/?$/);
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();

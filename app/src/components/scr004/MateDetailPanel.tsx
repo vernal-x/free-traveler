@@ -147,9 +147,7 @@ export default function MateDetailPanel({
               </div>
               {post.preferred_conditions ? (
                 <div>
-                  <dt className="text-title-sm text-text-primary">
-                    희망 조건
-                  </dt>
+                  <dt className="text-title-sm text-text-primary">희망 조건</dt>
                   <dd className="mt-xxs text-body-sm text-text-secondary">
                     {post.preferred_conditions}
                   </dd>
@@ -177,7 +175,9 @@ export default function MateDetailPanel({
               </p>
             </div>
 
-            {children ? <div className="mt-lg space-y-md">{children}</div> : null}
+            {children ? (
+              <div className="mt-lg space-y-md">{children}</div>
+            ) : null}
           </>
         ) : (
           <div className="mt-md rounded-md bg-surface-soft p-md text-center">
@@ -185,8 +185,8 @@ export default function MateDetailPanel({
               상세 내용은 로그인 후 확인할 수 있어요
             </p>
             <p className="mt-xxs text-body-sm text-text-secondary">
-              작성자 소개·조건·설명 확인과 참가 신청은 로그인한 회원만 이용할
-              수 있습니다.
+              작성자 소개·조건·설명 확인과 참가 신청은 로그인한 회원만 이용할 수
+              있습니다.
             </p>
             <Link
               href="/account"

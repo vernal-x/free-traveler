@@ -64,8 +64,7 @@ export default function HotelForm() {
 
   const regions = useMemo(
     () =>
-      COUNTRY_GROUPS.find((g) => g.countryCode === countryCode)?.regions ??
-      [],
+      COUNTRY_GROUPS.find((g) => g.countryCode === countryCode)?.regions ?? [],
     [countryCode],
   );
 
@@ -83,8 +82,8 @@ export default function HotelForm() {
   function handleCountryChange(nextCountryCode: string) {
     setCountryCode(nextCountryCode);
     const nextRegions =
-      COUNTRY_GROUPS.find((g) => g.countryCode === nextCountryCode)
-        ?.regions ?? [];
+      COUNTRY_GROUPS.find((g) => g.countryCode === nextCountryCode)?.regions ??
+      [];
     setRegion(nextRegions[0] ?? "");
   }
 

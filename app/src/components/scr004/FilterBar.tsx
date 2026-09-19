@@ -54,7 +54,8 @@ function FilterBarInner() {
   const region = searchParams.get("region") ?? "";
   const startDate = searchParams.get("start") ?? "";
   const endDate = searchParams.get("end") ?? "";
-  const activeStyles = searchParams.get("style")?.split(",").filter(Boolean) ?? [];
+  const activeStyles =
+    searchParams.get("style")?.split(",").filter(Boolean) ?? [];
   const status = searchParams.get("status") ?? "";
 
   const [totalCount, setTotalCount] = useState<number | null>(null);
@@ -96,7 +97,8 @@ function FilterBarInner() {
       if (region) query = query.eq("region", region);
       if (startDate) query = query.gte("end_date", startDate);
       if (endDate) query = query.lte("start_date", endDate);
-      if (activeStyles.length > 0) query = query.overlaps("travel_style", activeStyles);
+      if (activeStyles.length > 0)
+        query = query.overlaps("travel_style", activeStyles);
 
       const today = new Date().toISOString().slice(0, 10);
       if (status === "RECRUITING") {
@@ -119,9 +121,10 @@ function FilterBarInner() {
         setTotalCount(count ?? 0);
         return;
       }
-      const blockedIds = await listBlockedUserIds(supabase, userData.user.id).catch(
-        () => [] as string[],
-      );
+      const blockedIds = await listBlockedUserIds(
+        supabase,
+        userData.user.id,
+      ).catch(() => [] as string[]);
       if (cancelled) return;
       if (blockedIds.length === 0) {
         setTotalCount(count ?? 0);
@@ -140,7 +143,9 @@ function FilterBarInner() {
         excludeQuery = excludeQuery.overlaps("travel_style", activeStyles);
       }
       if (status === "RECRUITING") {
-        excludeQuery = excludeQuery.eq("status", "RECRUITING").gte("end_date", today);
+        excludeQuery = excludeQuery
+          .eq("status", "RECRUITING")
+          .gte("end_date", today);
       } else if (status === "CLOSED") {
         excludeQuery = excludeQuery.or(`status.eq.CLOSED,end_date.lt.${today}`);
       }

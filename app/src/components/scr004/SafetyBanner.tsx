@@ -27,8 +27,8 @@ export default function SafetyBanner() {
           ))}
         </ul>
         <p className="mt-sm text-caption text-text-muted">
-          free_traveler는 회원 간 매칭을 중개할 뿐, 상대방의 신원이나 여행
-          중 안전을 보증하지 않습니다.
+          free_traveler는 회원 간 매칭을 중개할 뿐, 상대방의 신원이나 여행 중
+          안전을 보증하지 않습니다.
         </p>
 
         <div className="mt-md flex flex-col items-start gap-xs sm:flex-row sm:items-center sm:gap-md">

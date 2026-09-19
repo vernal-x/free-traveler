@@ -256,9 +256,7 @@ export default function MyRequests() {
               <div className="flex flex-wrap items-center justify-between gap-xs">
                 <StatusBadge status={application.status} />
                 <span className="text-caption text-text-muted">
-                  {new Date(application.created_at).toLocaleDateString(
-                    "ko-KR",
-                  )}
+                  {new Date(application.created_at).toLocaleDateString("ko-KR")}
                 </span>
               </div>
               <p className="mt-xs text-title-sm text-text-primary">

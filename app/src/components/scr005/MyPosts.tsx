@@ -184,8 +184,8 @@ export default function MyPosts() {
                 </span>
                 <span className="text-caption text-text-muted">
                   {post.country_code}
-                  {post.region ? ` · ${post.region}` : ""} ·{" "}
-                  {post.start_date}~{post.end_date}
+                  {post.region ? ` · ${post.region}` : ""} · {post.start_date}~
+                  {post.end_date}
                 </span>
               </div>
 

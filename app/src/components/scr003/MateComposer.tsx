@@ -87,7 +87,11 @@ export default function MateComposer() {
         .eq("id", user.id)
         .maybeSingle();
       if (cancelled) return;
-      if (!profile || !profile.is_adult || profile.account_status !== "ACTIVE") {
+      if (
+        !profile ||
+        !profile.is_adult ||
+        profile.account_status !== "ACTIVE"
+      ) {
         setAccess({ status: "not_adult" });
         return;
       }
@@ -101,9 +105,7 @@ export default function MateComposer() {
   }, []);
 
   if (access.status === "loading") {
-    return (
-      <div className="h-40 animate-pulse rounded-md bg-surface-soft" />
-    );
+    return <div className="h-40 animate-pulse rounded-md bg-surface-soft" />;
   }
 
   if (access.status === "signed_out" || access.status === "not_adult") {
@@ -127,7 +129,10 @@ function MateComposerForm() {
   const [preferredConditions, setPreferredConditions] = useState("");
   const [safetyRulesAgreed, setSafetyRulesAgreed] = useState(false);
   const [submitState, setSubmitState] = useState<
-    { status: "idle" } | { status: "submitting" } | { status: "error"; message: string } | { status: "success" }
+    | { status: "idle" }
+    | { status: "submitting" }
+    | { status: "error"; message: string }
+    | { status: "success" }
   >({ status: "idle" });
 
   const regions =
@@ -136,21 +141,18 @@ function MateComposerForm() {
   function handleCountryChange(nextCountryCode: string) {
     setCountryCode(nextCountryCode);
     const nextRegions =
-      COUNTRY_GROUPS.find((g) => g.countryCode === nextCountryCode)
-        ?.regions ?? [];
+      COUNTRY_GROUPS.find((g) => g.countryCode === nextCountryCode)?.regions ??
+      [];
     setRegion(nextRegions[0] ?? "");
   }
 
   function toggleStyle(style: string) {
     setTravelStyle((prev) =>
-      prev.includes(style)
-        ? prev.filter((s) => s !== style)
-        : [...prev, style],
+      prev.includes(style) ? prev.filter((s) => s !== style) : [...prev, style],
     );
   }
 
-  const dateOrderInvalid =
-    startDate && endDate ? endDate < startDate : false;
+  const dateOrderInvalid = startDate && endDate ? endDate < startDate : false;
   const canSubmit =
     title.trim().length > 0 &&
     countryCode &&

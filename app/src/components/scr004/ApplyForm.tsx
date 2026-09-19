@@ -172,10 +172,14 @@ export default function ApplyForm({ matePostId, onSuccess }: ApplyFormProps) {
 
       <button
         type="submit"
-        disabled={message.trim().length === 0 || submitState.status === "submitting"}
+        disabled={
+          message.trim().length === 0 || submitState.status === "submitting"
+        }
         className="inline-flex min-h-[44px] w-full items-center justify-center rounded-sm bg-primary px-lg text-button text-on-primary disabled:opacity-40"
       >
-        {submitState.status === "submitting" ? "요청 중..." : "참가 요청 보내기"}
+        {submitState.status === "submitting"
+          ? "요청 중..."
+          : "참가 요청 보내기"}
       </button>
     </form>
   );

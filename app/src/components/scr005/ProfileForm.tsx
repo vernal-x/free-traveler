@@ -82,9 +82,7 @@ export default function ProfileForm() {
 
   function toggleStyle(style: string) {
     setTravelStyle((prev) =>
-      prev.includes(style)
-        ? prev.filter((s) => s !== style)
-        : [...prev, style],
+      prev.includes(style) ? prev.filter((s) => s !== style) : [...prev, style],
     );
   }
 
@@ -260,9 +258,7 @@ export default function ProfileForm() {
           <p className="text-caption text-text-muted">
             성인 인증:{" "}
             <span
-              className={
-                profile.is_adult ? "text-success" : "text-text-muted"
-              }
+              className={profile.is_adult ? "text-success" : "text-text-muted"}
             >
               {profile.is_adult ? "완료" : "미완료"}
             </span>

@@ -92,8 +92,7 @@ export default function MyBlocklist() {
           차단한 사용자가 없습니다.
         </p>
         <p className="mt-xxs text-body-sm text-text-secondary">
-          불편하거나 위험한 상대는 동행글 상세 화면에서 바로 차단할 수
-          있어요.
+          불편하거나 위험한 상대는 동행글 상세 화면에서 바로 차단할 수 있어요.
         </p>
       </div>
     );

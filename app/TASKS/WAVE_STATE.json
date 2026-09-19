@@ -296,7 +296,7 @@
         "E2E-TRAVEL-TOOLS",
         "MANUAL-RESPONSIVE-A11Y-CHECK"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": false,
       "checkpoint_result": null
     },
@@ -311,7 +311,7 @@
       "checkpoint_result": null
     }
   ],
-  "current_wave": "W25",
+  "current_wave": "W26",
   "waiting_for_preview": false,
   "tasks": {
     "AUTH-EMAIL-ADULT": {
@@ -319,8 +319,8 @@
       "updated_at": "2026-09-18T00:50:00Z"
     },
     "CI-PIPELINE": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T11:20:00Z"
     },
     "CMP-SCR001-ABOUT-SUMMARY": {
       "status": "DONE",
@@ -463,20 +463,20 @@
       "updated_at": "2026-09-18T00:40:00Z"
     },
     "E2E-MATE-AUTH": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T11:30:00Z"
     },
     "E2E-PUBLIC-SMOKE": {
       "status": "DONE",
       "updated_at": "2026-09-19T10:15:00Z"
     },
     "E2E-TRAVEL-TOOLS": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T11:40:00Z"
     },
     "MANUAL-RESPONSIVE-A11Y-CHECK": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T11:55:00Z"
     },
     "PAGE-SCR001": {
       "status": "DONE",
@@ -576,8 +576,8 @@
     }
   },
   "last_run": {
-    "wave_id": "W25",
-    "task_id": "UNIT-TRAVEL-DATES",
+    "wave_id": "W26",
+    "task_id": "MANUAL-RESPONSIVE-A11Y-CHECK",
     "result": "DONE"
   }
 }

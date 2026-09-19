@@ -49,13 +49,9 @@ const MEMBER_TABS = [
   { id: "my_blocklist", label: "차단 목록" },
 ] as const;
 
-const MODERATOR_TABS = [
-  { id: "admin_reports", label: "신고 관리" },
-] as const;
+const MODERATOR_TABS = [{ id: "admin_reports", label: "신고 관리" }] as const;
 
-const ADMIN_ONLY_TABS = [
-  { id: "admin_url", label: "외부 URL 설정" },
-] as const;
+const ADMIN_ONLY_TABS = [{ id: "admin_url", label: "외부 URL 설정" }] as const;
 
 type TabId =
   | (typeof MEMBER_TABS)[number]["id"]
@@ -75,8 +71,8 @@ export default async function AccountPage({ searchParams }: AccountPageProps) {
         <section className="mx-auto max-w-[1240px] px-md py-lg">
           <h1 className="text-display-md text-text-primary">계정</h1>
           <p className="mt-xs text-body-md text-text-secondary">
-            로그인하면 동행 참가 신청, 내가 쓴 글 관리, 차단 목록 등을 이용할
-            수 있어요.
+            로그인하면 동행 참가 신청, 내가 쓴 글 관리, 차단 목록 등을 이용할 수
+            있어요.
           </p>
         </section>
         <section className="mx-auto max-w-[1240px] px-md pb-2xl">

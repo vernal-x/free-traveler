@@ -20,9 +20,7 @@ export default function RecommendCta() {
 
   return (
     <section className="mx-auto max-w-[1240px] px-md py-section-mobile md:py-section-desktop">
-      <h2 className="text-display-md text-text-primary">
-        기억에 남는 여행지
-      </h2>
+      <h2 className="text-display-md text-text-primary">기억에 남는 여행지</h2>
       <p className="mt-xs text-body-md text-text-secondary">
         직접 다녀와서 자신 있게 추천하는 곳들입니다.
       </p>

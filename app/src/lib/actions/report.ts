@@ -47,7 +47,9 @@ export async function createReportAction(input: {
     revalidatePath("/mates");
     return { error: null, reportId: report.id };
   } catch {
-    return { error: "신고 접수 중 문제가 발생했습니다. 잠시 후 다시 시도해주세요." };
+    return {
+      error: "신고 접수 중 문제가 발생했습니다. 잠시 후 다시 시도해주세요.",
+    };
   }
 }
 

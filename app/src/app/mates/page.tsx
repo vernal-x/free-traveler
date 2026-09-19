@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import { getMatePostById, type MatePostRow } from "@/lib/supabase/queries/mate-post";
+import {
+  getMatePostById,
+  type MatePostRow,
+} from "@/lib/supabase/queries/mate-post";
 import FilterBar from "@/components/scr004/FilterBar";
 import MateList from "@/components/scr004/MateList";
 import MateDetailPanel from "@/components/scr004/MateDetailPanel";
@@ -83,8 +86,8 @@ export default async function MatesPage({ searchParams }: MatesPageProps) {
           믿을 수 있는 동행을 찾아보세요
         </h1>
         <p className="mt-xs text-body-md text-text-secondary">
-          동행글 목록과 제목은 로그인 없이도 볼 수 있어요. 상세 내용 확인과
-          참가 요청은 성인 인증을 마친 회원만 이용할 수 있습니다.
+          동행글 목록과 제목은 로그인 없이도 볼 수 있어요. 상세 내용 확인과 참가
+          요청은 성인 인증을 마친 회원만 이용할 수 있습니다.
         </p>
         <Link
           href="/travel-tools"

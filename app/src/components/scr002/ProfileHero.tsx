@@ -10,8 +10,14 @@ import { REPRESENTATIVE_PROFILE } from "@/data/representative-profile";
  */
 
 export default function ProfileHero() {
-  const { name, tagline, heroImage, tripsCount, countriesCount, continentsCount } =
-    REPRESENTATIVE_PROFILE;
+  const {
+    name,
+    tagline,
+    heroImage,
+    tripsCount,
+    countriesCount,
+    continentsCount,
+  } = REPRESENTATIVE_PROFILE;
 
   const stats = [
     { label: "Trips", value: `${tripsCount}+` },

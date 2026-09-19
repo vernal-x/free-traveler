@@ -25,9 +25,7 @@ export default function CountryChips() {
       <div className="mt-lg space-y-md">
         {visitedCountries.map((group) => (
           <div key={group.region}>
-            <h3 className="text-title-sm text-text-primary">
-              {group.region}
-            </h3>
+            <h3 className="text-title-sm text-text-primary">{group.region}</h3>
             <div className="mt-xs flex gap-xs overflow-x-auto md:flex-wrap md:overflow-visible">
               {group.countries.map((country) => (
                 <span

@@ -136,9 +136,7 @@ function MateListInner({ onSelectPost }: MateListProps) {
     return (
       <section className="mx-auto max-w-[1240px] px-md py-md">
         <div className="rounded-md bg-danger/10 px-md py-lg text-center">
-          <p className="text-body-md text-danger">
-            목록을 불러오지 못했어요.
-          </p>
+          <p className="text-body-md text-danger">목록을 불러오지 못했어요.</p>
           <button
             type="button"
             onClick={() => router.refresh()}

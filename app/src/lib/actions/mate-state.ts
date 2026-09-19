@@ -23,10 +23,7 @@ export function isValidMatePostTransition(
 }
 
 export type MateApplicationStatus =
-  | "PENDING"
-  | "ACCEPTED"
-  | "REJECTED"
-  | "WITHDRAWN";
+  "PENDING" | "ACCEPTED" | "REJECTED" | "WITHDRAWN";
 
 const MATE_APPLICATION_TRANSITIONS: Record<
   MateApplicationStatus,
