@@ -306,13 +306,13 @@
       "task_ids": [
         "RELEASE-VERCEL-SUPABASE-CHECK"
       ],
-      "status": "pending",
+      "status": "in_progress",
       "checkpoint_required": true,
       "checkpoint_result": null
     }
   ],
-  "current_wave": "W26",
-  "waiting_for_preview": false,
+  "current_wave": "W27",
+  "waiting_for_preview": true,
   "tasks": {
     "AUTH-EMAIL-ADULT": {
       "status": "DONE",
@@ -499,8 +499,8 @@
       "updated_at": "2026-09-19T09:45:00Z"
     },
     "RELEASE-VERCEL-SUPABASE-CHECK": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T12:10:00Z"
     },
     "SA-ACCOUNT-DELETE": {
       "status": "DONE",
@@ -576,8 +576,8 @@
     }
   },
   "last_run": {
-    "wave_id": "W26",
-    "task_id": "MANUAL-RESPONSIVE-A11Y-CHECK",
+    "wave_id": "W27",
+    "task_id": "RELEASE-VERCEL-SUPABASE-CHECK",
     "result": "DONE"
   }
 }
