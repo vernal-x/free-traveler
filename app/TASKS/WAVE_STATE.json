@@ -270,7 +270,7 @@
       "task_ids": [
         "PAGE-SCR005"
       ],
-      "status": "pending",
+      "status": "in_progress",
       "checkpoint_required": true,
       "checkpoint_result": null
     },
@@ -311,8 +311,8 @@
       "checkpoint_result": null
     }
   ],
-  "current_wave": "W23",
-  "waiting_for_preview": false,
+  "current_wave": "W24",
+  "waiting_for_preview": true,
   "tasks": {
     "AUTH-EMAIL-ADULT": {
       "status": "DONE",
@@ -495,8 +495,8 @@
       "updated_at": "2026-09-19T06:23:31Z"
     },
     "PAGE-SCR005": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T09:45:00Z"
     },
     "RELEASE-VERCEL-SUPABASE-CHECK": {
       "status": "PENDING",
@@ -576,8 +576,8 @@
     }
   },
   "last_run": {
-    "wave_id": "W23",
-    "task_id": "CMP-SCR005-PROFILE",
+    "wave_id": "W24",
+    "task_id": "PAGE-SCR005",
     "result": "DONE"
   }
 }
