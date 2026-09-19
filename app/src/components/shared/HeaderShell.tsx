@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { createClient } from "@/lib/supabase/client";
+import { signOut } from "@/lib/auth/actions";
 
 /**
  * TOOL-LAYOUT-SHELL의 Header 상호작용 부분만 담당하는 Client Component.
@@ -13,10 +15,13 @@ import { useEffect, useState } from "react";
  * `shadow.card`)와 모바일 햄버거 토글처럼 클라이언트 상태가 필요한 부분만
  * 분리해 여기서 구현하고, layout.tsx는 이 컴포넌트를 import해 조립만 한다.
  *
- * 아직 Supabase Auth가 연결되지 않았으므로(AUTH-EMAIL-ADULT는 이후 Wave) 로그인
- * 여부는 항상 미인증(Guest) 상태로 렌더링한다 — "로그인"/"회원가입" 모두
- * SCR-005(`/account`)로 연결해 `header_login_or_profile_icon` 내비게이션
- * 계약을 만족시킨다. 실제 세션 인지 상태 전환은 Auth 관련 후속 Task의 몫이다.
+ * 로그인 여부는 브라우저 Supabase 클라이언트로 확인한다(AUTH-EMAIL-ADULT
+ * 이후 실제로 연결됨 — 이 컴포넌트가 "항상 Guest로만 렌더링"하던 이전 상태는
+ * 로그아웃 UI가 앱 전체에 없다는 실제 버그로 이어져 있었다, 발견 후 수정).
+ * `signIn`/`signOut`(`src/lib/auth/actions.ts`)이 모두 Server Action이라
+ * 브라우저 클라이언트의 `onAuthStateChange`가 반응하지 않으므로, 대신
+ * 페이지 이동(`pathname` 변경)마다 다시 확인한다 — `signOut()`은 항상 `/`로
+ * redirect하므로 로그아웃 직후에는 반드시 재확인된다.
  */
 
 const NAV_ITEMS = [
@@ -31,6 +36,7 @@ export default function HeaderShell() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [lastPathname, setLastPathname] = useState(pathname);
+  const [isSignedIn, setIsSignedIn] = useState(false);
 
   // 경로가 바뀌면 렌더 중에 모바일 메뉴를 닫는다(React 권장 패턴 — effect 대신
   // 렌더 중 setState로 "prop 변경에 따른 상태 조정"을 처리해 불필요한 추가
@@ -48,6 +54,25 @@ export default function HeaderShell() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    const supabase = createClient();
+    supabase.auth.getUser().then(({ data }) => {
+      if (!cancelled) setIsSignedIn(Boolean(data.user));
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [pathname]);
+
+  async function handleSignOut() {
+    // `signOut()`은 항상 `/`로 redirect하는데, 로그아웃을 이미 `/`에서
+    // 눌렀다면 pathname이 바뀌지 않아 위 재확인 effect가 다시 실행되지
+    // 않는다(실제로 재현된 문제) — 그래서 여기서 즉시 상태를 반영한다.
+    setIsSignedIn(false);
+    await signOut();
+  }
 
   return (
     <header
@@ -84,15 +109,30 @@ export default function HeaderShell() {
         </nav>
 
         <div className="hidden items-center gap-sm md:flex">
-          <Link href="/account" className="px-sm text-button text-text-primary">
-            로그인
-          </Link>
-          <Link
-            href="/account"
-            className="inline-flex min-h-[44px] items-center justify-center rounded-sm bg-primary px-lg text-button text-on-primary"
-          >
-            회원가입
-          </Link>
+          {isSignedIn ? (
+            <button
+              type="button"
+              onClick={handleSignOut}
+              className="inline-flex min-h-[44px] items-center justify-center rounded-sm border border-border-strong bg-canvas px-lg text-button text-text-primary"
+            >
+              로그아웃
+            </button>
+          ) : (
+            <>
+              <Link
+                href="/account"
+                className="px-sm text-button text-text-primary"
+              >
+                로그인
+              </Link>
+              <Link
+                href="/account"
+                className="inline-flex min-h-[44px] items-center justify-center rounded-sm bg-primary px-lg text-button text-on-primary"
+              >
+                회원가입
+              </Link>
+            </>
+          )}
         </div>
 
         <button
@@ -125,18 +165,30 @@ export default function HeaderShell() {
             ))}
           </ul>
           <div className="mt-sm flex gap-sm">
-            <Link
-              href="/account"
-              className="flex-1 rounded-sm border border-border-strong px-md py-sm text-center text-button text-text-primary"
-            >
-              로그인
-            </Link>
-            <Link
-              href="/account"
-              className="flex-1 rounded-sm bg-primary px-md py-sm text-center text-button text-on-primary"
-            >
-              회원가입
-            </Link>
+            {isSignedIn ? (
+              <button
+                type="button"
+                onClick={handleSignOut}
+                className="flex-1 rounded-sm border border-border-strong px-md py-sm text-center text-button text-text-primary"
+              >
+                로그아웃
+              </button>
+            ) : (
+              <>
+                <Link
+                  href="/account"
+                  className="flex-1 rounded-sm border border-border-strong px-md py-sm text-center text-button text-text-primary"
+                >
+                  로그인
+                </Link>
+                <Link
+                  href="/account"
+                  className="flex-1 rounded-sm bg-primary px-md py-sm text-center text-button text-on-primary"
+                >
+                  회원가입
+                </Link>
+              </>
+            )}
           </div>
         </nav>
       )}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent, type ReactNode } from "react";
+import { useRouter } from "next/navigation";
 import {
   confirmAdult,
   requestPasswordReset,
@@ -64,9 +65,7 @@ function StatusMessage({ status }: { status: CardStatus }) {
     return <p className="mt-xs text-caption text-danger">{status.message}</p>;
   }
   if (status.kind === "success") {
-    return (
-      <p className="mt-xs text-caption text-success">{status.message}</p>
-    );
+    return <p className="mt-xs text-caption text-success">{status.message}</p>;
   }
   return null;
 }
@@ -81,6 +80,7 @@ async function tryConfirmAdult(): Promise<void> {
 }
 
 function LoginCard() {
+  const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [status, setStatus] = useState<CardStatus>({ kind: "idle" });
@@ -96,6 +96,10 @@ function LoginCard() {
     await tryConfirmAdult();
     setStatus({ kind: "success", message: "로그인되었습니다." });
     showToast("로그인되었습니다.", "success");
+    // 이 화면(PAGE-SCR005)은 Server Component라 로그인 성공만으로는
+    // Guest→Member 뷰가 바뀌지 않는다(실제로 재현되어 발견됨) — 서버
+    // 컴포넌트를 다시 실행해 역할별 탭을 즉시 반영한다.
+    router.refresh();
   }
 
   return (
@@ -166,7 +170,8 @@ function SignUpCard() {
     await tryConfirmAdult();
     setStatus({
       kind: "success",
-      message: "가입 확인 이메일을 보냈습니다. 메일함에서 링크를 눌러 인증을 완료해 주세요.",
+      message:
+        "가입 확인 이메일을 보냈습니다. 메일함에서 링크를 눌러 인증을 완료해 주세요.",
     });
   }
 
@@ -302,13 +307,10 @@ function PostLoginBenefits() {
 function SecurityNotice() {
   return (
     <div className="rounded-md bg-surface-soft px-md py-lg">
-      <h2 className="text-title-md text-text-primary">
-        보안·개인정보 안내
-      </h2>
+      <h2 className="text-title-md text-text-primary">보안·개인정보 안내</h2>
       <p className="mt-sm text-body-sm text-text-secondary">
-        비밀번호는 안전하게 암호화되어 저장되며, 정확한 생년월일은 어떤
-        경우에도 요청하지 않습니다. 성인 여부와 확인 시각만 최소한으로
-        저장합니다.
+        비밀번호는 안전하게 암호화되어 저장되며, 정확한 생년월일은 어떤 경우에도
+        요청하지 않습니다. 성인 여부와 확인 시각만 최소한으로 저장합니다.
       </p>
     </div>
   );
