@@ -15,7 +15,7 @@
     "task:contract": "python3 scripts/audit_tasks.py",
     "screen:contract": "python3 scripts/check_screen_contract.py",
     "validate": "python3 scripts/validate_inputs.py && npm run task:contract && python3 scripts/build_waves.py --check && npm run screen:contract",
-    "ci": "npm run lint && npm run typecheck && npm run test:unit && npm run task:contract && npm run screen:contract -- --mode=ci && npm run build",
+    "ci": "npm run lint && npm run test:unit && npm run task:contract && npm run screen:contract -- --mode=ci && npm run build && npm run typecheck",
     "release:check": "npm run ci && npm run screen:contract -- --mode=release && npm run test:e2e"
   },
   "dependencies": {
