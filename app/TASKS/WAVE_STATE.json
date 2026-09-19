@@ -113,9 +113,9 @@
       "task_ids": [
         "PAGE-SCR001"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": true,
-      "checkpoint_result": null
+      "checkpoint_result": "CONFIRMED"
     },
     {
       "wave_id": "W11",
@@ -311,7 +311,7 @@
       "checkpoint_result": null
     }
   ],
-  "current_wave": "W09",
+  "current_wave": "W10",
   "waiting_for_preview": false,
   "tasks": {
     "AUTH-EMAIL-ADULT": {
@@ -479,8 +479,8 @@
       "updated_at": null
     },
     "PAGE-SCR001": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T01:35:13Z"
     },
     "PAGE-SCR002": {
       "status": "PENDING",
@@ -575,5 +575,9 @@
       "updated_at": null
     }
   },
-  "last_run": {"wave_id": "W09", "task_id": "CMP-SCR001-MATE-TEASER", "result": "DONE"}
+  "last_run": {
+    "wave_id": "W10",
+    "task_id": "PAGE-SCR001",
+    "result": "DONE"
+  }
 }
