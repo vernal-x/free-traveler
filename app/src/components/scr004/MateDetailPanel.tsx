@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import {
@@ -23,11 +23,18 @@ import {
  * 있다. 로그인 여부는 브라우저 Supabase 클라이언트로 확인하며, 실제 쓰기 권한은
  * 여전히 RLS·Server Action이 강제한다 — 이 체크는 UX 게이트일 뿐 보안 경계가
  * 아니다.
+ *
+ * `children`(범위 확장, 사용자 승인, PAGE-SCR004 소관): `CMP-SCR004-APPLY-FLOW`/
+ * `REPORT-BLOCK`의 참가 요청 폼·신고/차단 진입점을 이 패널의 스크롤 영역 안에
+ * 함께 렌더링하기 위한 슬롯이다 — Mobile에서 이 패널이 전체화면 고정 오버레이라,
+ * 형제 요소로 배치하면 화면 뒤에 가려 접근할 수 없어 슬롯이 필요했다. 로그인
+ * 상태일 때만 렌더링한다(비로그인 시 위 로그인 안내만 보인다).
  */
 
 export interface MateDetailPanelProps {
   post: MatePostRow | null;
   onClose: () => void;
+  children?: ReactNode;
 }
 
 const STATUS_LABEL: Record<"RECRUITING" | "CLOSED", string> = {
@@ -35,7 +42,11 @@ const STATUS_LABEL: Record<"RECRUITING" | "CLOSED", string> = {
   CLOSED: "마감",
 };
 
-export default function MateDetailPanel({ post, onClose }: MateDetailPanelProps) {
+export default function MateDetailPanel({
+  post,
+  onClose,
+  children,
+}: MateDetailPanelProps) {
   const [authorNickname, setAuthorNickname] = useState<string | null>(null);
   const [isSignedIn, setIsSignedIn] = useState(false);
 
@@ -165,6 +176,8 @@ export default function MateDetailPanel({ post, onClose }: MateDetailPanelProps)
                 {post.description}
               </p>
             </div>
+
+            {children ? <div className="mt-lg space-y-md">{children}</div> : null}
           </>
         ) : (
           <div className="mt-md rounded-md bg-surface-soft p-md text-center">
