@@ -248,7 +248,7 @@
         "CMP-SCR005-GUEST-AUTH",
         "SA-ACCOUNT-DELETE"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": false,
       "checkpoint_result": null
     },
@@ -311,7 +311,7 @@
       "checkpoint_result": null
     }
   ],
-  "current_wave": "W21",
+  "current_wave": "W22",
   "waiting_for_preview": false,
   "tasks": {
     "AUTH-EMAIL-ADULT": {
@@ -419,12 +419,12 @@
       "updated_at": null
     },
     "CMP-SCR005-ADMIN-URL-SETTINGS": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T07:05:00Z"
     },
     "CMP-SCR005-GUEST-AUTH": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T07:25:00Z"
     },
     "CMP-SCR005-MY-ACTIVITY": {
       "status": "PENDING",
@@ -503,8 +503,8 @@
       "updated_at": null
     },
     "SA-ACCOUNT-DELETE": {
-      "status": "PENDING",
-      "updated_at": null
+      "status": "DONE",
+      "updated_at": "2026-09-19T07:40:00Z"
     },
     "SA-BLOCK": {
       "status": "DONE",
@@ -576,8 +576,8 @@
     }
   },
   "last_run": {
-    "wave_id": "W21",
-    "task_id": "SA-EXTERNAL-URL-SETTINGS",
+    "wave_id": "W22",
+    "task_id": "SA-ACCOUNT-DELETE",
     "result": "DONE"
   }
 }
